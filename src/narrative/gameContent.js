@@ -1053,7 +1053,6 @@ Z: {
             C: "Between you and Control you do not know whose job is more banal, the one who submits the reports or the one who verifies them. You do know whose face would feel most satisfying beneath your knuckles. You pass several minutes in deep imaginative throes and staring at the wobbling ceiling fan light directly before you sign and resubmit the report, your eyes starry with fluorescence."
         }
     },
-    },
 
     Z: {
         text: "Standard protocol prescribes the submission of a tardy report.<br><br>When you open your office’s pneumatic tube to submit it, a few small liquor bottles fall out, along with 30% of a cigar. Evidently Korsakoff could not make it to the trash can. What was he doing in your office anyway?<br><br>You send off the report. You are surprised when a minute later you hear the gentle tap of an arriving missive.<br><br>Control has indicated that you failed to initial in a couple spots.",
