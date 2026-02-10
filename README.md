@@ -150,7 +150,7 @@ This controls how everything looks:
 5. **Narrative Round 2** → Player reads story and makes a choice
 6. **Shade Game** → Player matches a shade
 7. ...continues alternating...
-8. **Final Rounds (37-38)** → Special ending content
+8. **Final Rounds (36-37)** → Special ending content
 
 ### How Screens Transition
 
@@ -373,11 +373,11 @@ case 'A':
 2. **Find the `TOLERANCE` constant** at the top:
 
 ```javascript
-const TOLERANCE = { a: 5, b: 10, c: 20 };
+const TOLERANCE = { a: 3, b: 10, c: 20 };
 ```
 
 This means:
-- Option A: Player must be within 5 shades of the target
+- Option A: Player must be within 3 shades of the target
 - Option B: Player must be within 10 shades of the target
 - Option C: Player must be within 20 shades of the target (easier)
 

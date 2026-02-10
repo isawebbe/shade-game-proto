@@ -18,7 +18,7 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "PT Sans", sans-serif;
     background-color: var(--bg-color);
     color: var(--text-color);
     line-height: 1.6;
@@ -50,6 +50,95 @@ body {
 
 .screen.hidden {
     display: none !important;
+}
+
+/* ==================== CONTENT FADE-IN ANIMATIONS ==================== */
+.fade-in-content {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInContent 0.8s ease-out forwards;
+}
+
+@keyframes fadeInContent {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Staggered fade-in delays */
+.fade-in-content-delay-1 {
+    animation-delay: 0.2s;
+}
+
+.fade-in-content-delay-2 {
+    animation-delay: 0.4s;
+}
+
+.fade-in-content-delay-3 {
+    animation-delay: 0.6s;
+}
+
+/* Specific content elements */
+.text-display,
+.consequence-text,
+.story-content,
+.game-header,
+.circle-container,
+.options-container,
+.game-buttons-container,
+.btn,
+.option-btn,
+.continue-btn,
+.back-button,
+.next-button,
+.commit-button {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInContent 0.8s ease-out forwards;
+}
+
+.text-display {
+    animation-delay: 0.1s;
+}
+
+.consequence-text {
+    animation-delay: 0.1s;
+}
+
+.story-content {
+    animation-delay: 0.1s;
+}
+
+.game-header {
+    animation-delay: 0.2s;
+}
+
+.circle-container {
+    animation-delay: 0.3s;
+}
+
+.options-container {
+    animation-delay: 0.4s;
+}
+
+.game-buttons-container {
+    animation-delay: 0.5s;
+}
+
+.btn,
+.continue-btn,
+.back-button {
+    animation-delay: 0.6s;
+}
+
+.option-btn {
+    animation-delay: 0.7s;
+}
+
+.next-button,
+.commit-button {
+    animation-delay: 0.6s;
 }
 
 /* ==================== TITLE SCREEN ==================== */
@@ -145,10 +234,41 @@ body {
     padding: 0.8rem 2rem;
     border-radius: 5px;
     font-size: 1rem;
+    font-family: "PT Sans", sans-serif;
     cursor: pointer;
     transition: all 0.2s ease;
     margin: 0.5rem;
     min-width: 150px;
+}
+
+.back-button {
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 2px solid #4a5258;
+    border-radius: 6px;
+    color: #333;
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-right: auto;
+    min-width: 160px;
+    text-align: center;
+}
+
+.back-button:hover {
+    background-color: #4a5258;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.back-button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .btn:hover {
@@ -162,16 +282,60 @@ body {
 }
 
 .continue-btn {
-    background-color: #888888 !important;
+    background-color: #777777 !important;
     border-color: #666666 !important;
     color: white !important;
+    margin: 20px auto;
+    display: block;
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    transition: all 0.2s ease;
+}
+
+.show-options-btn {
+    background-color: #777777 !important;
+    border-color: #666666 !important;
+    color: white !important;
+    margin: 20px auto;
+    display: block;
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    transition: all 0.2s ease;
+}
+
+.continue-btn:hover {
+    background-color: #666666 !important;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.show-options-btn:hover {
+    background-color: #666666 !important;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* Game buttons container */
+.game-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    margin: 2rem auto 0;
+    gap: 1rem;
+    padding: 0 1rem;
 }
 
 .next-button {
-    position: fixed;
-    left: 50%;
-    bottom: 40px;
-    transform: translateX(-50%);
+    position: relative;
+    left: auto;
+    bottom: auto;
+    transform: none;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -182,7 +346,7 @@ body {
     border: 1px solid #ddd;
     font-size: 1.5rem;
     cursor: pointer;
-    z-index: 1000;
+    margin-left: auto;
 }
 
 .next-button:hover {
@@ -196,27 +360,147 @@ body {
     gap: 1.1rem;
     width: 100%;
     max-width: 750px;
-    margin: 0 auto;
-    padding: 20px 0;
+    margin: 20px auto;
+    padding: 20px;
     opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
-#options-container.visible {
+#options-container:not(.hidden) {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.option-btn {
+    background-color: #ffffff;
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: "PT Sans", sans-serif;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-align: left;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.option-btn:hover {
+    background-color: var(--hover-bg);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Disabled and exhausted option buttons */
+.option-button:disabled,
+.option-button.exhausted,
+.option-btn:disabled,
+.option-btn.exhausted,
+.option:disabled,
+.option.disabled,
+.option.exhausted {
+    opacity: 0.6;
+    cursor: not-allowed;
+    background-color: #f0f0f0 !important;
+    color: #999 !important;
+    border-color: #ddd !important;
+    position: relative;
+    text-decoration: line-through !important;
+    filter: grayscale(100%);
+}
+
+/* Disable pointer events only for option buttons, not for the shade game */
+.option-button:disabled,
+.option-button.exhausted,
+.option-btn:disabled,
+.option-btn.exhausted,
+.option:disabled,
+.option.disabled,
+.option.exhausted,
+#options-container .option-button:disabled,
+#options-container .option-button.exhausted,
+#options-container .option-btn:disabled,
+#options-container .option-btn.exhausted,
+#options-container .option:disabled,
+#options-container .option.disabled,
+#options-container .option.exhausted {
+    pointer-events: none;
+}
+
+.option-button:disabled:hover,
+.option-button.exhausted:hover,
+.option-btn:disabled:hover,
+.option-btn.exhausted:hover,
+.option:disabled:hover,
+.option.disabled:hover,
+.option.exhausted:hover {
+    transform: none !important;
+    box-shadow: none !important;
+    background-color: #f0f0f0 !important;
+    text-decoration: line-through !important;
+}
+
+/* Screen shake animation */
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    10%, 30%, 50%, 70%, 90% { transform: translateX(-10px); }
+    20%, 40%, 60%, 80% { transform: translateX(10px); }
+}
+
+/* Red flash animation */
+@keyframes flash-red {
+    0% { background-color: rgba(255, 0, 0, 0.5); }
+    100% { background-color: transparent; }
+}
+
+/* Shake class for wrong guesses */
+#shade-game-screen.shake {
+    animation: shake 0.5s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+
+/* Flash overlay */
+.flash-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: transparent;
+    animation: flash-red 0.5s ease-out;
+    pointer-events: none;
+    z-index: 1000;
+}
+/* Apply animations to game container */
+.shake {
+    animation: shake 0.5s cubic-bezier(.36,.07,.19,.97) both;
+}
+
+.flash-red {
+    animation: flash-red 0.5s ease-out;
+}
+
+.option-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Make sure the options container is visible when not hidden */
+#options-container:not(.hidden) {
+    display: flex;
     opacity: 1;
     visibility: visible;
+    transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 .option {
     opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
-}
-
-.option.visible {
-    opacity: 1;
-    transform: translateY(0);
+    transform: translateY(20px) scale(0.95);
+    /* Remove transition to prevent conflicts with Web Animations API */
 }
 
 .option-btn {
@@ -270,6 +554,7 @@ body {
     width: 100%;
     padding: 20px;
     font-size: 16px;
+    font-family: "PT Sans", sans-serif;
     cursor: pointer;
     border-radius: 12px;
     border: 2px solid #333;
@@ -282,15 +567,40 @@ body {
     transform: translateY(-2px);
 }
 
-.option-button:disabled,
-.option-button.exhausted {
-    opacity: 0.35;
-    cursor: not-allowed;
-    pointer-events: none;
-    filter: grayscale(100%);
-    background: #f0f0f0;
-    color: #999;
-    border-color: #ddd;
+/* This rule is now covered by the more specific rule above */
+
+/* Game buttons container */
+.game-buttons-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+    max-width: 500px;
+    padding: 2rem;
+    background-color: var(--card-bg);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    margin-bottom: 20px;
+}
+
+/* Back button */
+.back-button {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    background-color: var(--card-bg);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.2s ease;
+}
+
+.back-button:hover {
+    background-color: var(--hover-bg);
 }
 
 #game-container {
@@ -305,17 +615,35 @@ body {
 .game-header {
     display: flex;
     justify-content: center;
-    gap: 40px;
-    margin-bottom: 20px;
+    gap: 60px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.circle-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    position: relative;  /* For absolutely positioned children */
+    padding-bottom: 60px;  /* Make room for the commit button */
+}
+
+.circle-label {
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--text-color);
+    text-align: center;
 }
 
 .circle {
-    width: 62.5px;
-    height: 62.5px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
     border: 2px solid #333;
     transition: all 0.2s ease;
     flex-shrink: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .circle[data-preview="true"] {
@@ -331,6 +659,77 @@ body {
     border: 2px solid #333;
     cursor: pointer;
     position: relative;
+}
+
+/* Commit button container */
+.commit-button-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    width: 100%;
+}
+
+/* Commit button */
+.commit-button {
+    background-color: #f8f9fa;
+    border: 2px solid #4a5258;
+    border-radius: 6px;
+    color: #333;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 10px 24px;
+    transition: all 0.2s ease;
+    text-align: center;
+    min-width: 150px;
+    opacity: 0;
+    pointer-events: none;
+    white-space: nowrap;
+}
+
+.commit-button:not(.hidden) {
+    opacity: 1;
+    pointer-events: auto;
+    animation: fadeIn 0.3s ease-out;
+}
+
+.commit-button:hover {
+    background-color: #e9ecef;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.commit-button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.commit-button:focus {
+    outline: 2px solid #4a5258;
+    outline-offset: 2px;
+}
+
+/* ==================== CONSEQUENCES SCREEN ==================== */
+#consequences-screen {
+    justify-content: flex-start;
+    padding: 2rem 192px;
+}
+
+.consequences-container {
+    max-width: 100%;
+    width: 100%;
+}
+
+.consequence-text {
+    background-color: transparent;
+    padding: 0.5rem 3rem;
+    margin: 1.5rem 0;
+    text-align: left;
+    line-height: 1.7;
+    font-size: 0.95rem;
+    color: var(--text-color);
+    width: 100%;
+    min-height: 150px;
 }
 
 /* ==================== INTERLUDE SCREEN ==================== */
@@ -397,6 +796,15 @@ body {
         font-size: 0.9rem;
     }
 
+    #consequences-screen {
+        padding: 1rem 1rem;
+    }
+
+    .consequence-text {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+
     #spectrum {
         width: 100%;
         max-width: 400px;
@@ -409,6 +817,138 @@ body {
     .circle {
         width: 50px;
         height: 50px;
+    }
+}
+
+/* ==================== GAME OVER SCREEN ==================== */
+#game-over-screen {
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+    color: #333333;
+    text-align: center;
+}
+
+.game-over-container {
+    background: rgba(255, 255, 255, 0.9);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 3rem 2rem;
+    max-width: 500px;
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 1s ease-out;
+}
+
+#game-over-screen h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.game-year {
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+    opacity: 0.7;
+    letter-spacing: 2px;
+}
+
+.game-author {
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+    font-style: italic;
+    opacity: 0.8;
+}
+
+.game-credits {
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+    opacity: 0.6;
+    line-height: 1.4;
+}
+
+.final-stats {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-radius: 10px;
+    border: 1px solid rgba(102, 126, 234, 0.3);
+}
+
+#game-over-screen .btn {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3);
+}
+
+#game-over-screen .btn:hover {
+    background: linear-gradient(135deg, #5a6fd8 0%, #6a4190 100%);
+    transform: translateY(-3px);
+    box-shadow: 0 15px 35px rgba(102, 126, 234, 0.4);
+}
+
+#game-over-screen .btn:active {
+    transform: translateY(-1px);
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive adjustments for game over screen */
+@media (max-width: 600px) {
+    .game-over-container {
+        padding: 2rem 1.5rem;
+        margin: 1rem;
+    }
+    
+    #game-over-screen h1 {
+        font-size: 2.5rem;
+    }
+    
+    .game-year {
+        font-size: 1rem;
+    }
+    
+    .game-author {
+        font-size: 1rem;
+    }
+    
+    .game-credits {
+        font-size: 0.8rem;
+    }
+    
+    .final-stats {
+        font-size: 1.1rem;
+        padding: 0.8rem;
+    }
+    
+    #game-over-screen .btn {
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
     }
 }
 

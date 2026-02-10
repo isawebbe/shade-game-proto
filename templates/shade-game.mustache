@@ -6,27 +6,37 @@
     </div>
 </div>
 
-<!-- Options Screen -->
-<div id="options-screen" class="screen hidden">
-    <div class="options-container">
-        <h2>Choose an Option</h2>
-        <div class="options-grid">
-            <button class="option-button" data-option="a">Option A</button>
-            <button class="option-button" data-option="b">Option B</button>
-            <button class="option-button" data-option="c">Option C</button>
-        </div>
-    </div>
-</div>
-
 <!-- Game Screen -->
 <div id="shade-game-screen" class="screen hidden">
     <div id="game-container">
         <div class="game-header">
-            <div id="target-circle" class="circle"></div>
-            <div id="player-circle" class="circle"></div>
+            <div class="circle-container">
+                <div id="target-circle" class="circle"></div>
+            </div>
+            <div class="circle-container">
+                <div id="player-circle" class="circle"></div>
+            </div>
         </div>
         <div id="spectrum"></div>
-        <button id="next-button" class="next-button hidden">→</button>
+        <div class="commit-button-container">
+            <button id="commit-button" class="commit-button hidden">Commit</button>
+        </div>
+        <div class="game-buttons">
+            <button id="back-to-options" class="btn back-button hidden">Back to Options</button>
+            <button id="next-button" class="next-button hidden">→</button>
+        </div>
+    </div>
+</div>
+
+<!-- Options Screen -->
+<div id="options-screen" class="screen hidden">
+    <div class="options-content">
+        <p id="story-text"></p>
+        <div class="options-container">
+            <button class="option-button" data-option="A">Option A</button>
+            <button class="option-button" data-option="B">Option B</button>
+            <button class="option-button" data-option="C">Option C</button>
+        </div>
     </div>
 </div>
 
