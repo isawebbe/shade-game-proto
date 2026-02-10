@@ -1000,16 +1000,18 @@ Z: {
         }
     },
     Z: {
-    text: "Someone has noticed you are late.<br><br>Korsakoff, the lieutenant colonel you are here to relieve, has begun his ritual absinthe abuse early–or right on time, you suppose, actually. You find him in the crammed windowless room used as an office. He tells you to come in and close the door.",
-    options: {
-    A: "Apologize",
-    B: "Tell him to piss off",
-    C: "Teach him a lesson",
+        text: "Someone has noticed you are late.<br><br>Korsakoff, the lieutenant colonel you are here to relieve, has begun his ritual absinthe abuse early–or right on time, you suppose, actually. You find him in the crammed windowless room used as an office. He tells you to come in and close the door.",
+        options: {
+        A: "Apologize",
+        B: "Tell him to piss off",
+        C: "Teach him a lesson",
         },
     consequences: {
       A: "Are you quite certain?! You teach even small Vanya and Stan Jr. that you must apologize for misfortunes that weaved from your hands only. None of the events of this day are thus.<br><br>Yet a small part of you feels this is just. A man owns his victories and his mistakes both.<br><br>Without going into detail of an inappropriate magnitude you tell him you had some interruptions and toss the apology at the end, feeling something stretched that not stretched in a very long time..",
       B: "Drinking on the job, is he? Is he aware that his vodka spectacles may cause him some difficulty in detecting something like a nuclear barrage? Which, as it happens, is his real job much in the way that drinking is not? Is he not embarrassed of such boorish comportment? Is this how he wins the love and admiration of his staff and country? If the unthinkable happened would merely he cry as a small child? Has he no shame?<br><br>It seems Korsakoff has some questions for you as well, though they are strung with less eloquence and more as in the fashion of an instrument of torture or an upsetting holiday decoration. As he leaves he throws at you a very important key and slams the door. Some dust falls from the ceiling.<br><br>He opens the door again and tells you to get the hell out of his office, which you do with equal parts pleasure and rage. You reassure him you are doing so because you cannot stand its drear and odor and not because he told you to. He performs an ungentlemanly gesture and departs. You presume it is for the bar.<br><br>If your mood is ashen it will be no fault of yours.",
       C: "You cannot lay hands on a fellow lieutenant but you would very much like to. As this so-named officer sprays moist epithets of abuse you recall the one and only time in ten years of marriage you slapped your wife. She was heavy with your son at the time and immediately you wished you hadn’t. At the time you had been thinking of your mother’s slaps, which were more frequent by tens of comparisons, almost as a language themselves for you knew in your pit when to be expecting them, after the fashion of a bad joke with a salient punchline. So to speak.<br><br>But it seems neither you nor Julia expected your slap of her. She cried and you gathered her and swore a thousand thousand times it would never again happen. Since that day you have not used your hands on her but as a river melts into spring so too have your bellicose fantasiesinto the thin, flimsy moral membrane that impedes their realization.<br><br>But what is this? He has stopped. He is blinking and clearing his throat and shuffling papers on his desk.<br><br>He goes to hand you a very important key but his hands shake with fear or delirium and he drops it on the floor.<br><br>In short time he scurries off, much after the fashion of a piglet with a tail curled between his legs.<br><br>He slams shut the office door and you startle; you almost do not recognize the man who is you, reflected in the door’s glass, taking him at first for some hated and feared thing that lives hidden under a child’s bed.",
+        },
+    }
 },
 21: {
     W: {
@@ -1854,8 +1856,6 @@ Z: {
 }
 }  // End of narratives
 }  // End of gameContent
-}  // Missing closing brace 1
-}  // Missing closing brace 2
 
 // Helper function to shuffle an object's entries
 function shuffleObject(obj) {
