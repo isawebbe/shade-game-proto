@@ -64,7 +64,7 @@ vite-integrated-game/
 │   ├── title.mustache      # The title/start screen
 │   ├── narrative.mustache # The narrative game screen
 │   ├── shade-game.mustache # The shade matching game screen
-│   └── interlude.mustache  # Transition screens between games
+│   └── consequences.mustache  # Transition screens between games
 └── src/                    # All your game code goes here
     ├── main.js             # The "conductor" - controls which screen shows when
     ├── state/
@@ -143,13 +143,14 @@ This controls how everything looks:
 
 ### The Game Flow
 
-1. **Title Screen** → Player clicks "Begin Your Journey"
+1. **Title Screen** → Player clicks "Start"
 2. **Narrative Round 1** → Player reads story and makes a choice
 3. **Shade Game** → Player matches a shade
-4. **Narrative Round 2** → Player reads story and makes a choice
-5. **Shade Game** → Player matches a shade
-6. ...continues alternating...
-7. **Final Rounds (37-38)** → Special ending content
+4. **Consequences** → After successfully matching the shade, player reads consequences text.
+5. **Narrative Round 2** → Player reads story and makes a choice
+6. **Shade Game** → Player matches a shade
+7. ...continues alternating...
+8. **Final Rounds (37-38)** → Special ending content
 
 ### How Screens Transition
 
@@ -183,16 +184,20 @@ When a player makes a choice in the narrative game:
    - Choice C: Decreases redemption rate by 10%
 3. The consequence text is shown
 4. Player clicks "Continue"
-5. The game moves to the next round
+5. Player score is increased or decreased
+6. The game moves to the next round based on the player's Redemption rate
 
 ### How the Shade Game Works
 
 1. Player sees story text
-2. Player chooses an option (A, B, or C) - each has different difficulty
+2. Player chooses an option (A, B, or C). A generates shades in the middle of the spectrum, B generates shades toward either end of the spectrum, and C generates black or white only.
 3. A target shade is generated based on the option
-4. Player uses the spectrum to match the shade
-5. If correct: Win! Move to interlude
-6. If wrong: Lose an attempt, try again (or lose if out of attempts)
+4. Player uses the spectrum to match the shade. For option A the player gets 3 attempts, for option B the player gets 3 attempts, for option C the player gets infinite attempts.
+5. If correct: Win! Move to consequences.
+6. If wrong: Lose an attempt, try again. If out of attempts, player is returned to the narrative screen, where the exhausted attempt's button is disabled.
+7. The player advances to the consequences screen once they have a successful attempt. The player hits continue.
+8. The player is returned to the narrative screen for the next round, where all attempts for each option have been reset.
+9. This repeats until the player reaches round 36. Rounds 36 and 37 have only one variant, and 2 options, options A and C. Round 37 is the final round of the game, and has a button that can take the player back to the beginning of the game.
 
 ---
 
@@ -368,11 +373,11 @@ case 'A':
 2. **Find the `TOLERANCE` constant** at the top:
 
 ```javascript
-const TOLERANCE = { a: 10, b: 10, c: 20 };
+const TOLERANCE = { a: 5, b: 10, c: 20 };
 ```
 
 This means:
-- Option A: Player must be within 10 shades of the target
+- Option A: Player must be within 5 shades of the target
 - Option B: Player must be within 10 shades of the target
 - Option C: Player must be within 20 shades of the target (easier)
 
@@ -423,7 +428,7 @@ Find the `body` section:
 
 ```css
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "PT Sans", sans-serif;
     /* ... */
 }
 ```
