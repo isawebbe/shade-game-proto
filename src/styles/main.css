@@ -27,6 +27,11 @@ body {
     overflow-x: hidden;
 }
 
+/* Allow body scroll when narrative screen is visible */
+body:has(#narrative-screen:not(.hidden)) {
+    overflow-y: auto;
+}
+
 #app {
     min-height: 100vh;
     position: relative;
@@ -50,6 +55,15 @@ body {
 
 .screen.hidden {
     display: none !important;
+}
+
+/* Allow narrative screen to expand beyond viewport */
+#narrative-screen {
+    position: absolute !important;
+    height: auto !important;
+    min-height: 100vh;
+    justify-content: flex-start !important;
+    overflow-y: visible !important;
 }
 
 /* ==================== CONTENT FADE-IN ANIMATIONS ==================== */
@@ -203,10 +217,6 @@ body {
 }
 
 /* ==================== NARRATIVE SCREEN ==================== */
-#narrative-screen {
-    justify-content: flex-start;
-    padding: 2rem 4rem;
-}
 
 .text-display {
     background-color: transparent;
@@ -616,7 +626,8 @@ body {
     display: flex;
     justify-content: center;
     gap: 60px;
-    margin-bottom: 30px;
+    margin-top: 160px;
+    margin-bottom: 5px;
     flex-wrap: wrap;
 }
 
@@ -767,6 +778,45 @@ body {
 
 .flash-red {
     animation: flashRed 0.5s ease-in-out;
+}
+
+/* Match the shade animation */
+.match-the-shade-animation {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    pointer-events: none;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--text-color);
+    text-transform: lowercase;
+    letter-spacing: 2px;
+    opacity: 0;
+    animation: matchShadeAppear 2s ease-out forwards;
+}
+
+@keyframes matchShadeAppear {
+    to {
+        opacity: 1;
+    }
+}
+
+.match-the-shade-animation.fade-out {
+    animation: matchShadeFadeOut 1s ease-out forwards;
+}
+
+@keyframes matchShadeFadeOut {
+    from {
+        opacity: 1;
+        transform: translateX(-50%) scale(1);
+    }
+    to {
+        opacity: 0;
+        transform: translateX(-50%) scale(0.9);
+    }
 }
 
 /* ==================== RESPONSIVE ==================== */

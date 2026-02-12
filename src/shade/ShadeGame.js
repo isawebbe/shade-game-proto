@@ -247,11 +247,41 @@ export class ShadeGame {
         const gameScreen = this.container.querySelector('#shade-game-screen');
         if (gameScreen) gameScreen.classList.remove('hidden');
         
+        // Show "match the shade" animation for round 1 only
+        this.showMatchTheShadeAnimation();
+        
         this.updateBackButton();
     }
 
     render() {
         this.paintCircles();
+    }
+
+    showMatchTheShadeAnimation() {
+        // Only show animation for round 1
+        if (gameState.currentRound !== 1) {
+            return;
+        }
+
+        const animationElement = this.container.querySelector('#match-the-shade-animation');
+        if (!animationElement) {
+            console.warn('Match the shade animation element not found');
+            return;
+        }
+
+        // Show the animation
+        animationElement.classList.remove('hidden');
+        
+        // After 5 seconds, add fade-out class
+        setTimeout(() => {
+            animationElement.classList.add('fade-out');
+            
+            // Hide completely after fade-out animation (1 second)
+            setTimeout(() => {
+                animationElement.classList.add('hidden');
+                animationElement.classList.remove('fade-out');
+            }, 1000);
+        }, 5000);
     }
 
     handleMouseDown(e) {
