@@ -554,13 +554,13 @@ Z: {
     consequences: {
         A: "Exactly you do not know why you agree but her words recall to you the events of the morning. It is difficult to take the takes of better men and it is more difficult to admit that perhaps those were not your takes today, but with this admission you feel lifted of an unaccountable weight.<br><br>There still is time, she says. Alright, Auntie.<br><br>She moves aside to let you pass, humming what is unmistakably the National Anthem. You note that the feeling that your body has briefly not belonged to you has replaced any frustration toward Ilya.",
         B: "For all she is talking about monsters, perhaps it is time she met a real one. She tumbles down the stairs.<br><br>The bread-shaped dog shrieks.<br><br>The way up is clear now. You compose yourself and ascend the final two flights of stairs. You note that something becomes solid in you, and has enhanced any frustration toward Ilya.",
-        C: "The bread-shaped dog who shrieks and shrieks. Much as the woman stokes the furnace of your rage and waters the flower of your despair with every atom of her existence, the hysterical bleating of the bread-shaped dog equal and surpass such invitations to madness.<br><br>You know that neither the woman nor the bread-shaped dog, neither of these instruments of your personal torture answer to words or even your fists.<br><br>In the whole world there is one language only that everyone speaks.<br><br>Once the throat of the bread-shaped dog is between your fingers you cause him travel at speed into this peeling wall and that tile of cement. You launch him down the stairs as a cosmonaut. He squelches and is silent. The woman could not stop you and rushes probably to collect what misshapen remains.<br><br>The way up is clear now. You compose yourself and ascend the final two flights of stairs."
+        C: "The bread-shaped dog who shrieks and shrieks. Much as the woman stokes the furnace of your rage and waters the flower of your despair with every atom of her existence, the hysterical bleating of the bread-shaped dog equals and surpasses such invitations to madness.<br><br>You know that neither the woman nor the bread-shaped dog, neither of these instruments of your personal torture answer to words or even your fists.<br><br>In the whole world there is one language only that everyone speaks.<br><br>Once the throat of the bread-shaped dog is between your fingers you cause him travel at speed into this peeling wall and that tile of cement. You launch him down the stairs as a cosmonaut. He squelches and is silent. The woman could not stop you and rushes probably to collect what misshapen remains.<br><br>The way up is clear now. You compose yourself and ascend the final two flights of stairs."
     }
 }
 },
 13: {
 W: {
-    text: "You have reached The flat of Ilya (finally).",
+    text: "You have reached the flat of Ilya (finally).",
     options: {
         A: "Knock",
         B: "Bang",
@@ -574,7 +574,7 @@ W: {
 },
 
 X: {
-    text: "You have reached The flat of Ilya (finally).",
+    text: "You have reached the flat of Ilya (finally).",
     options: {
         A: "Knock",
         B: "Bang",
@@ -588,7 +588,7 @@ X: {
 },
 
 Y: {
-    text: "You have reached The flat of Ilya (finally).",
+    text: "You have reached the flat of Ilya (finally).",
     options: {
         A: "Knock",
         B: "Bang",
@@ -602,7 +602,7 @@ Y: {
 },
 
 Z: {
-    text: "You have reached The flat of Ilya (finally).",
+    text: "You have reached the flat of Ilya (finally).",
     options: {
         A: "Knock",
         B: "Bang",
@@ -716,7 +716,7 @@ Y: {
 },
 
 Z: {
-    text: "Along with many tiny insects, Ilya sits on a couch of mysterious stains.<br><br>You understand, in such a way. It begins with one bug, one tear. The days drop as needles from a dying larch, and before you are aware, your life shape is a dead tree, a mistreated couch, a cloudy aquarium whose inhabitants live or do not live in a state of superpositional limbo. Such parables are common in the sordid literature of the Church of the Bottle.<br><br>He asks what Lieutenant Bother-in-Law (sic) is doing on his doorstep at such an hour.",
+    text: "Along with many tiny insects, Ilya sits on a couch of mysterious stains.<br><br>You understand, in such a way. It begins with one bug, one tear. The days drop as needles from a dying larch, and before you are aware, your life shape is a dead tree, a mistreated couch, a cloudy aquarium whose inhabitants live and do not live in a state of superpositional limbo. Such parables are common in the sordid literature of the Church of the Bottle.<br><br>He asks what Lieutenant Bother-in-Law (sic) is doing on his doorstep at such an hour.",
     options: {
         A: "Apologize for your intrusion",
         B: "You are asking questions here",
@@ -782,7 +782,7 @@ Z: {
         consequences: {
             A: "You accept that you are not certain he lies completely. The smallest light is enough.<br><br>You sit together in silence. You speak man to man. Accidentally you threaten him, then retract it.<br><br>He asks if Julia knows you are here. You say she does not and should not.<br><br>He hands you some money. You exhale and say thank you.<br><br>You encounter neither the child nor the woman nor the bread-shaped dog on your descent.",
             B: "You enumerate his misfortuned friends and insult him carefully, thoroughly, expansively, addressing not only him but the entire catalog of your life’s grievances.<br><br>You tirade longer. It feels great. He throws money at you and tirades back. You hate him for interrupting your moment.<br><br>You encounter neither the child nor the woman nor the bread-shaped dog on your descent.",
-            C: "You were not always this person.<br><br>You strike him, submerge his head in the aquarium, feel his breath persist, then fail. You take what little he has.<br><br>You rinse your hands and leave, carrying a feeling uglier than his mangled face. Your blood feels solid and venomous.<br><br>You encounter neither the child nor the woman nor the bread-shaped dog on your descent."
+            C: "You were not always this person.<br><br>You subdue him by means of his stained shirt collar. This tears, so you seizer his throat instead and strike. And strike. And strike. You submerge his head in the bowl of fish. He flaps and flops after the fashion of aquarium residents.<br><br>You feel his breath persist, then fail.<br><br>You rinse your hands, take what little he has, and leave, carrying a feeling uglier than his mangled face. Your blood feels solid and venomous.<br><br>You encounter neither the child nor the woman nor the bread-shaped dog on your descent."
         }
     }
 },
@@ -896,7 +896,7 @@ Z: {
         consequences: {
             A: "Now why on Earth would you do a thing as that?<br><br>Before there is time for thinking you roll down your window and ask if he needs a ride. He is grateful just to go three miles already in the direction you are going. He has a lot to say about the FBA and the gap between the very rich and very poor. Already you are giving him a ride and it is early and your day especially taxes you, so you tell him to shut his mouth.<br><br>He gets out at a stoplight. He does not thank you. You are still not sure why you did this.",
             B: "Are you not late already and here is this moron failing to do something as simple as operate a motor vehicle? Probably he is FBA anyway and this is some new psychological operational tactic, for you drive every day without causing such commotion. You memorize his face so as to report him for terrorism later.",
-            C: "In fact it makes you feel a little better to see someone worse off than you today. Then you feel as a jerk for feeling that way.<br><br>You have often felt as a white mouse in a maze, asking if by turning this or that corner you will find a fat hunk of cheese or a dead end. You watch other mice find their cheeses and wonder who could be satisfied with this. Is there more?<br><br>The face of this man is a maze within a maze within a maze."
+            C: "In fact it makes you feel a little better to see someone worse off than you today. Better, and also worse someway.<br><br>You have often felt as a white mouse in a maze, asking if by turning this or that corner you will find a fat hunk of cheese or a dead end. You watch other mice find their cheese and wonder who could be satisfied with this life. Is there more?<br><br>The face of this man on the road side is a maze within a maze within a maze."
         }
     }
 },
@@ -944,7 +944,7 @@ Z: {
     },
 
     Z: {
-        text: "You arrive at the Base’s security gate.<br><br>More money pours into the war machine. More missiles built and tucked into bedrock after the fashion of manic squirrels and acorns. In the last year alone the Base has consumed almost the total land surrounding. What were homes and businesses are now enormous anthills tunneled far underground, sentries against the apocalypse.<br><br>As though this duck and cover bullshit protects anyone.<br><br>The officer on duty is not known to you. As you examine his visage you wonder if in another time and place he might have been a goggle-eyed watcher of birds instead.<br><br>He wants to check your car.",
+        text: "You arrive at the Base’s security gate.<br><br>More money pours into the war machine. More missiles built and tucked into bedrock after the fashion of manic squirrels and acorns. In the last year alone the Base has consumed almost the total land surrounding. What were homes and businesses are now enormous anthills tunneled far underground, sentries against the apocalypse.<br><br>As though this duck and cover horse show protects anyone.<br><br>The officer on duty is not known to you. As you examine his visage you wonder if in another time and place he might have been a goggle-eyed watcher of birds instead.<br><br>He wants to check your car.",
         options: {
             A: "Oblige him",
             B: "What for?",
@@ -952,7 +952,7 @@ Z: {
         },
         consequences: {
             A: "You have choices but all of them invite more issues into your life than the national magazine and you would prefer not to end up a story, or worse, a headline.<br><br>Once he has conducted a military grade search he explains that the recent FBA threats have put the Base under stricter security protocol. He supposes he could have explained this to you before.<br><br>Before you drive off he informs you that your gas tank is leaking.",
-            B: "Does this boy know who you are? Obviously not.<br><br>He says it will only take a couple of minutes. During the several minutes he spends examining every inch of your car’s shell you take great pains to remind him that you are his superior and that his current actions are impeding the execution of this country’s defensive operations.<br><br>Once he has conducted a military grade search he explains that the recent FBA threats have put the Base under strict security protocol. You postulate aloud that he could have explained this to you before, were his ears not so congested with stupidity. Such are the issues with the youth of the present. Not two atoms of sense for banging together.<br><br>Before you drive off he informs you that your gas tank is leaking.",
+            B: "Does this boy know who you are? Obviously not.<br><br>He says it will only take a couple of minutes. During the several minutes he spends examining every inch of your car’s shell you take great pains to remind him that you are his superior and that his current actions are impeding the execution of this country’s defensive operations.<br><br>Once he has conducted a military grade search he explains that the recent FBA threats have put the Base under strict security protocol. You postulate aloud that he could have explained this to you before, were his ears not so congested with stupidity. Such are the issues with the youth of the present. Not even two atoms of sense for banging together.<br><br>Before you drive off he informs you that your gas tank is leaking.",
             C: "You express the ways in which you can make his life unpleasant for the practical crime of detaining you.<br><br>He says it will only take a couple of minutes. When he is on the ground checking under your car, the thought of backing over his head and what that would look and sound as enters and exits your mind as a wraith. The gear shift sweats under your palm.<br><br>Once he has conducted a military grade search he explains that the recent FBA threats have put the Base under strict security protocol. You inform him that you have his badge number and with great ease can locate his place of residence. He swallows and wishes you a good day, possessing no indication that Death itself just has graced his unworthy life with a prolonged sentence. Not today.<br><br>Before you drive off he, shaking as a very small dog, informs you that your gas tank is leaking."
         }
     }
@@ -1003,19 +1003,19 @@ Z: {
         text: "Someone has noticed you are late.<br><br>Korsakoff, the lieutenant colonel you are here to relieve, has begun his ritual absinthe abuse early–or right on time, you suppose, actually. You find him in the crammed windowless room used as an office. He tells you to come in and close the door.",
         options: {
         A: "Apologize",
-        B: "Tell him to piss off",
+        B: "Tell him to go to the devil",
         C: "Teach him a lesson",
         },
     consequences: {
       A: "Are you quite certain?! You teach even small Vanya and Stan Jr. that you must apologize for misfortunes that weaved from your hands only. None of the events of this day are thus.<br><br>Yet a small part of you feels this is just. A man owns his victories and his mistakes both.<br><br>Without going into detail of an inappropriate magnitude you tell him you had some interruptions and toss the apology at the end, feeling something stretched that not stretched in a very long time..",
       B: "Drinking on the job, is he? Is he aware that his vodka spectacles may cause him some difficulty in detecting something like a nuclear barrage? Which, as it happens, is his real job much in the way that drinking is not? Is he not embarrassed of such boorish comportment? Is this how he wins the love and admiration of his staff and country? If the unthinkable happened would merely he cry as a small child? Has he no shame?<br><br>It seems Korsakoff has some questions for you as well, though they are strung with less eloquence and more as in the fashion of an instrument of torture or an upsetting holiday decoration. As he leaves he throws at you a very important key and slams the door. Some dust falls from the ceiling.<br><br>He opens the door again and tells you to get the hell out of his office, which you do with equal parts pleasure and rage. You reassure him you are doing so because you cannot stand its drear and odor and not because he told you to. He performs an ungentlemanly gesture and departs. You presume it is for the bar.<br><br>If your mood is ashen it will be no fault of yours.",
-      C: "You cannot lay hands on a fellow lieutenant but you would very much like to. As this so-named officer sprays moist epithets of abuse you recall the one and only time in ten years of marriage you slapped your wife. She was heavy with your son at the time and immediately you wished you hadn’t. At the time you had been thinking of your mother’s slaps, which were more frequent by tens of comparisons, almost as a language themselves for you knew in your pit when to be expecting them, after the fashion of a bad joke with a salient punchline. So to speak.<br><br>But it seems neither you nor Julia expected your slap of her. She cried and you gathered her and swore a thousand thousand times it would never again happen. Since that day you have not used your hands on her but as a river melts into spring so too have your bellicose fantasiesinto the thin, flimsy moral membrane that impedes their realization.<br><br>But what is this? He has stopped. He is blinking and clearing his throat and shuffling papers on his desk.<br><br>He goes to hand you a very important key but his hands shake with fear or delirium and he drops it on the floor.<br><br>In short time he scurries off, much after the fashion of a piglet with a tail curled between his legs.<br><br>He slams shut the office door and you startle; you almost do not recognize the man who is you, reflected in the door’s glass, taking him at first for some hated and feared thing that lives hidden under a child’s bed.",
+      C: "You cannot lay hands on a fellow lieutenant but you would very much like to. As this so-named officer sprays moist epithets of abuse you recall the one and only time in ten years of marriage you slapped your wife. She was heavy with your son at the time and immediately you wished you hadn’t. At the time you had been thinking of your mother’s slaps, which were more frequent by tens of comparisons, almost as a language themselves for you knew in your pit when to be expecting them, after the fashion of a bad joke with a salient punchline. So to speak.<br><br>But neither you nor Julia expected your slap of her. She cried and you swore a thousand thousand times it would happen again never. Since that day you have not used your hands on her but as a river melts into spring so too have your bellicose fantasies into the thin, flimsy moral membrane that impedes their realization.<br><br>But what is this? He has stopped. He is blinking and clearing his throat and shuffling papers on his desk.<br><br>He goes to hand you a very important key but his hands shake with fear or delirium and he drops it on the floor.<br><br>In short time he scurries off, much after the fashion of a piglet with a tail curled between his legs.<br><br>He slams shut the office door and you startle; you almost do not recognize the man who is you, reflected in the door’s glass, taking him at first for some hated and feared thing that lives hidden under a child’s bed.",
         },
     }
 },
 21: {
     W: {
-        text: "Standard protocol prescribes the submission of a tardy report.<br><br>When you open your office’s pneumatic tube to send it, a few small liquor bottles fall out, along with 60% of a cigar. Evidently Korsakoff could not make it to the trash can. How strange, that he was in your office.<br><br>You send off the report. You are surprised when a minute later you hear the gentle tap of an arriving missive.<br><br>Control has indicated that you failed to initial in a couple spots.",
+        text: "Standard protocol prescribes the submission of a tardy report.<br><br>When you open your office’s pneumatic tube to send it, a few small liquor bottles fall out, along with an untouched cigar. Evidently Korsakoff could not make it to the trash can. How strange, that he was in your office.<br><br>You send off the report. You are surprised when a minute later you hear the gentle tap of an arriving missive.<br><br>Control has indicated that you failed to initial in a couple spots.",
         options: {
             A: "They just are doing their job",
             B: "What is this fresh nonsense",
@@ -1024,12 +1024,12 @@ Z: {
         consequences: {
             A: "You are distracted by your unpunctuality and should have filled the form appropriately the first time. You sign and resubmit the report without event.",
             B: "Why cannot this person merely forge an initial and let you get on with your vitally important work? Probably for this is a frightful way to conduct business but surely there is a third take that does not necessitate the further and vain spending of your time. You scratch out a second copy, deliberately making it less readable than the first, and submit it.",
-            C: "Between you and Control you do not know whose job is more banal, the one who submits the reports or the one who verifies them. You pass several minutes staring at the wobbling ceiling fan light directly before you sign and resubmit the report, your eyes starry with fluorescence."
+            C: "Between you and Control you do not know whose job contains more mortal boredoms, the one who submits the reports or the one who verifies them. You pass several minutes staring at the wobbling ceiling fan light directly before you sign and resubmit the report, your eyes starry with fluorescence."
         }
     },
 
     X: {
-        text: "Standard protocol prescribes the submission of a tardy report.<br><br>When you open your office’s pneumatic tube to submit it, a few small liquor bottles fall out, along with 50% of a cigar. Evidently Korsakoff could not make it to the trash can. What was he doing in your office anyway?<br><br>You send off the report. You are surprised when a minute later you hear the gentle tap of an arriving missive.<br><br>Control has indicated that you failed to initial in a couple spots.",
+        text: "Standard protocol prescribes the submission of a tardy report.<br><br>When you open your office’s pneumatic tube to submit it, a few small liquor bottles fall out, along with 75% of a cigar. Evidently Korsakoff could not make it to the trash can. What was he doing in your office anyway?<br><br>You send off the report. You are surprised when a minute later you hear the gentle tap of an arriving missive.<br><br>Control has indicated that you failed to initial in a couple spots.",
         options: {
             A: "They just are doing their job",
             B: "What is this fresh nonsense",
@@ -1038,12 +1038,12 @@ Z: {
         consequences: {
             A: "On such a day this most trivial of trivialities stokes the furnace of your discontent, but you admit probably just you should have filled the form appropriately for the first time. You sign and resubmit the report without event.",
             B: "Why cannot this person not merely forge an initial and let you get on with your vitally important work? This would be a frightful way to conduct business, however is this further and vain spending of your time not yet more frightful? You scratch out a second copy, deliberately making it less readable than the first, and submit it.",
-            C: "Between you and Control you do not know whose job is more banal, the one who submits the reports or the one who verifies them. You do know whose face would feel most satisfying beneath your knuckles. You pass several minutes staring at the wobbling ceiling fan light directly before you sign and resubmit the report, your eyes starry with fluorescence."
+            C: "Between you and Control you do not know whose job contains more mortal boredoms, the one who submits the reports or the one who verifies them. You do know whose face would feel most satisfying beneath your knuckles. You pass several minutes staring at the wobbling ceiling fan light directly before you sign and resubmit the report, your eyes starry with fluorescence."
         }
     },
 
     Y: {
-        text: "Standard protocol prescribes the submission of a tardy report.<br><br>When you open your office’s pneumatic tube to submit it, a few small liquor bottles fall out, along with 40% of a cigar. Evidently Korsakoff could not make it to the trash can. What was he doing in your office anyway?<br><br>You send off the report. You are surprised when a minute later you hear the gentle tap of an arriving missive.<br><br>Control has indicated that you failed to initial in a couple spots.",
+        text: "Standard protocol prescribes the submission of a tardy report.<br><br>When you open your office’s pneumatic tube to submit it, a few small liquor bottles fall out, along with 50% of a cigar. Evidently Korsakoff could not make it to the trash can. What was he doing in your office anyway?<br><br>You send off the report. You are surprised when a minute later you hear the gentle tap of an arriving missive.<br><br>Control has indicated that you failed to initial in a couple spots.",
         options: {
             A: "They just are doing their job",
             B: "What is this fresh nonsense",
@@ -1052,12 +1052,12 @@ Z: {
         consequences: {
             A: "And simply you are doing yours, though you suspect yours is slightly more important. You sign and resubmit the report without event.",
             B: "Why cannot this person not merely forge an initial and let you get on with your vitally important work? Did their brains get sucked into the pneumatic tubes while they were at it? You scratch out a second copy, deliberately making it less readable than the first, and submit it.",
-            C: "Between you and Control you do not know whose job is more banal, the one who submits the reports or the one who verifies them. You do know whose face would feel most satisfying beneath your knuckles. You pass several minutes in deep imaginative throes and staring at the wobbling ceiling fan light directly before you sign and resubmit the report, your eyes starry with fluorescence."
+            C: "Between you and Control you do not know whose job contains more mortal boredoms, the one who submits the reports or the one who verifies them. You do know whose face would feel most satisfying beneath your knuckles. You pass several minutes in deep imaginative throes and staring at the wobbling ceiling fan light directly before you sign and resubmit the report, your eyes starry with fluorescence."
         }
     },
 
     Z: {
-        text: "Standard protocol prescribes the submission of a tardy report.<br><br>When you open your office’s pneumatic tube to submit it, a few small liquor bottles fall out, along with 30% of a cigar. Evidently Korsakoff could not make it to the trash can. What was he doing in your office anyway?<br><br>You send off the report. You are surprised when a minute later you hear the gentle tap of an arriving missive.<br><br>Control has indicated that you failed to initial in a couple spots.",
+        text: "Standard protocol prescribes the submission of a tardy report.<br><br>When you open your office’s pneumatic tube to submit it, a few small liquor bottles fall out, along with 25% of a cigar. Evidently Korsakoff could not make it to the trash can. What was he doing in your office anyway?<br><br>You send off the report. You are surprised when a minute later you hear the gentle tap of an arriving missive.<br><br>Control has indicated that you failed to initial in a couple spots.",
         options: {
             A: "They just are doing their job",
             B: "What is this fresh nonsense",
@@ -1066,7 +1066,7 @@ Z: {
         consequences: {
             A: "And simply you are doing yours, though you suspect yours is slightly more important. What is a man maximally saturated in bureaucratic mire to do? You sign and resubmit the report without event.",
             B: "Why cannot this person not merely forge an initial and let you get on with your vitally important work? Did their brains get sucked into the pneumatic tubes while they were at it? You scratch out a second copy, deliberately making it less readable than the first, and submit it.",
-            C: "Between you and Control you do not know whose job is more banal, the one who submits the reports or the one who verifies them. You do know whose face would feel most satisfying beneath your knuckles. You pass several minutes in deep imaginative throes and staring at the wobbling ceiling fan light directly before you sign and resubmit the report, your eyes starry with fluorescence."
+            C: "Between you and Control you do not know whose job contains more mortal boredoms, the one who submits the reports or the one who verifies them. You do know whose face would feel most satisfying beneath your knuckles. You pass several minutes in deep imaginative throes and staring at the wobbling ceiling fan light directly before you sign and resubmit the report, your eyes starry with fluorescence."
         }
     }
 },
@@ -1840,7 +1840,9 @@ Z: {
         C: "Push the button"
     },
     consequences: {
-    }
+        A: "Consider for a moment this entire world of 4.6 billion people, plus more every second. Of how many are these people good men as yourself? You hope very many, but who can know? Of those souls, is it impossible that one wilted man who thirsts only for death has a horrible red button of his own?<br><br>Maybe he lived a day that was fraught with uncharming diversion, a life as full of miseries as a birthday balloon is full of hopeful air. It must be difficult, to be this man, and yet…<br><br>Ask yourself what is so different between you. Does not he have organs of laughter or of pain? Does he permit himself hope? Fear?<br><br>There is no question of the open permission of anger. Recall your own. Your wife’s face red and wet beneath your hand. Her underclothes damp with blood and lost life.<br><br>The country of your tragedy is singular as you yourself are singular, but within it lie uncountable and hostile districts, hoary backroads and dead ends. Imagine one hundred such nations. One thousand. Imagine interminable and roiling hills of debris and dust and decay. Imagine the gray ward of this frozen waste, shuffling in hateful silence, for every wish and hope and prayer, if ever it was heard, was ignored.<br><br>Were this your motherland, the world unmade by the button is nothing.<br><br>Ilya the scoundrel, the woman and the bread-shaped dog, the broken down man, the goggle eyed gate officer, Security Officer Vasily, Yelena, Korsakoff, Bolotov, Rapoport, Khruschev…<br><br>Little Stan Jr. Little Vanya. You cannot save your wife, you could not save the little son who almost was, but maybe you could save the rest, save them from the horrible man and his horrible button. You could strike back, preserve the empire.<br><br>Or maybe you are the kind of fool who believes in a someday world where these buttons are not necessary.",
+        C: "Consider for a moment this entire world of 4.6 billion people, plus more every second. Of how many are these people men as yourself? You hope not, but who can know? Of those souls, is it impossible that another wilted man who thirsts only for death has a horrible red button of his own?<br><br>Maybe he lived a day that was fraught with uncharming diversions as yours, a life full of miseries as a balloon is full of air. Such a life grinds the soul to bone dust and yet…<br><br>And yet is it impossible that the country of his tragedy is singular? That though it appears interminable, though its hills of dust and debris and decay roil into a bloodless sky, in spite of all this, its hoary backroads terminate and permit egress to a warmer more bloodful nation?<br><br>That against everything, though this man has the power to unmake his frozen world, where it is so hard to be good and where wishes and hopes and prayers go ignored and where sons are taken from fathers before even they have a chance to be–still this man thinks that it is worthy to be saved?<br><br>You pause. You might be a fool, but you cannot say this is impossible.<br><br>Ilya the scoundrel, the woman and the bread-shaped dog, the broken down man, the goggle eyed gate officer, Security Officer Vasily, Yelena, Korsakoff, Bolotov, Rapoport, Khruschev…<br><br>Little Stan Jr. Little Vanya. You cannot save your wife, you could not save your little son, but maybe you could save them, all of them, from the end of days.<br><br>Maybe there is a world where such buttons are not necessary."
+    },
 },
 37: {
     default: "What will you do?",
