@@ -59,18 +59,53 @@ class GameOrchestrator {
     }
 
     renderTitleScreen() {
-        this.app.innerHTML = Mustache.render(titleTemplate, { title: gameContent.title });
+        // Check for save data and prepare template data
+        const hasSave = gameState.hasSaveData();
+        let templateData = { title: gameContent.title };
+        
+        if (hasSave) {
+            const timestamp = gameState.getSaveTimestamp();
+            const saveDate = timestamp ? new Date(timestamp).toLocaleDateString() : 'Unknown';
+            
+            // Load save data temporarily to get round info
+            const currentRound = gameState.currentRound;
+            const currentMode = gameState.mode;
+            
+            // Create a temporary state to check save info
+            const tempState = { ...gameState };
+            if (gameState.loadGame()) {
+                templateData.hasSave = true;
+                templateData.saveRound = gameState.currentRound;
+                templateData.saveDate = saveDate;
+                
+                // Restore current state if we were just checking
+                if (currentMode === 'title') {
+                    gameState.currentRound = currentRound;
+                    gameState.mode = currentMode;
+                }
+            }
+        }
+        
+        this.app.innerHTML = Mustache.render(titleTemplate, templateData);
         gameState.mode = 'title';
 
         const playButton = this.app.querySelector('#play-button');
         if (playButton) {
             playButton.addEventListener('click', () => this.startGame());
         }
+        
+        const continueButton = this.app.querySelector('#continue-button');
+        if (continueButton) {
+            continueButton.addEventListener('click', () => this.continueGame());
+        }
     }
 
     startGame() {
-        console.log('Starting game...');
+        console.log('Starting new game...');
         gameState.reset();
+        
+        // Delete any existing save data when starting new game
+        gameState.deleteSave();
 
  // DEBUG: confirm redemptionRate at game start
     gameState.logRedemption('After reset (startGame)');
@@ -92,6 +127,96 @@ class GameOrchestrator {
         gameState.currentRound = 1;
 
         this.showNarrativeScreen();
+        
+        // Save game after starting
+        gameState.saveGame();
+    }
+
+    continueGame() {
+        console.log('Continuing saved game...');
+        
+        if (!gameState.loadGame()) {
+            console.error('Failed to load saved game');
+            return;
+        }
+
+        // Check if game was completed
+        if (gameState.gameOver) {
+            this.showGameOver();
+            return;
+        }
+
+        // Restore the appropriate screen based on saved mode
+        switch (gameState.mode) {
+            case 'narrative':
+                this.continueToNarrative();
+                break;
+            case 'shade':
+                this.continueToShade();
+                break;
+            case 'consequences':
+                this.continueToConsequences();
+                break;
+            default:
+                // If mode is unclear, start a new game
+                this.startGame();
+                return;
+        }
+    }
+
+    continueToNarrative() {
+        console.log('Continuing to narrative screen...');
+        
+        // Render narrative template
+        this.app.innerHTML = narrativeTemplate;
+
+        // Initialize narrative game
+        this.narrativeGame = new NarrativeGame(this.app);
+        this.narrativeGame.setOrchestrator(this);
+        this.narrativeGame.onNextRound = () => this.handleNarrativeNext();
+        this.narrativeGame.init();
+
+        this.showNarrativeScreen();
+    }
+
+    continueToShade() {
+        console.log('Continuing to shade game...');
+        
+        if (!gameState.previousChoice) {
+            console.error('No previous choice found for shade game');
+            this.continueToNarrative();
+            return;
+        }
+
+        // Hide all screens first
+        this.hideAllScreens();
+
+        // Insert shade game template if not already present
+        if (!this.app.querySelector('#shade-game-screen')) {
+            this.app.insertAdjacentHTML('beforeend', shadeGameTemplate);
+        }
+
+        // Initialize shade game
+        if (!this.shadeGame) {
+            this.shadeGame = new ShadeGame(this.app);
+            this.shadeGame.onWin = () => this.handleShadeWin();
+            this.shadeGame.onLose = () => this.handleShadeLose();
+            this.shadeGame.onBack = () => this.returnToNarrative();
+            this.shadeGame.init();
+        }
+
+        // Show the shade game screen
+        const gameScreen = this.app.querySelector('#shade-game-screen');
+        if (gameScreen) {
+            gameScreen.classList.remove('hidden');
+            // Start the shade battle with the saved option
+            this.shadeGame.startBattle(gameState.previousChoice);
+        }
+    }
+
+    continueToConsequences() {
+        console.log('Continuing to consequences screen...');
+        this.showConsequences();
     }
 
     showNarrativeScreen() {
@@ -126,6 +251,9 @@ class GameOrchestrator {
 
     transitionToShade(option) {
         console.log('Transitioning to shade game with option:', option);
+        
+        // Save game before transitioning to shade game
+        gameState.saveGame();
 
         // Hide narrative screens
         this.hideAllScreens();
@@ -183,6 +311,9 @@ class GameOrchestrator {
             }
         }
         
+        // Save game after winning shade game
+        gameState.saveGame();
+        
         // Show consequences screen
         this.showConsequences();
     }
@@ -219,6 +350,9 @@ class GameOrchestrator {
                 // Move to next round when continuing from consequences
                 gameState.currentRound++;
                 console.log('Moving to round:', gameState.currentRound);
+                
+                // Save game after advancing to next round
+                gameState.saveGame();
                 
                 // Return to narrative with fresh options
                 this.returnToNarrative();
@@ -341,6 +475,9 @@ class GameOrchestrator {
         
         // Update game state
         gameState.gameOver = true;
+        
+        // Delete save data when game is completed
+        gameState.deleteSave();
     }
 
     hideAllScreens() {

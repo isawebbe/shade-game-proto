@@ -1,5 +1,8 @@
 <div id="title-screen" class="screen">
     <h1>{{title}}</h1>
-    <button id="play-button" class="btn">Start</button>
+    {{#hasSave}}
+        <button id="continue-button" class="btn">Continue</button>
+    {{/hasSave}}
+    <button id="play-button" class="btn">{{#hasSave}}New Game{{/hasSave}}{{^hasSave}}Start{{/hasSave}}</button>
 </div>
 

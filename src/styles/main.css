@@ -166,18 +166,18 @@ body:has(#narrative-screen:not(.hidden)) {
     color: var(--primary-color);
 }
 
-#play-button {
+#play-button, #continue-button {
     padding: 15px 40px;
     font-size: 1.5rem;
     cursor: pointer;
-    border-radius: 8px;
-    border: none;
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
     color: white;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
     transition: transform 0.2s, background-color 0.2s;
 }
 
-#play-button:hover {
+#play-button:hover, #continue-button:hover {
     background-color: #555;
     transform: scale(1.05);
 }
@@ -241,15 +241,17 @@ body:has(#narrative-screen:not(.hidden)) {
     background-color: var(--secondary-color);
     color: white;
     border: 1px solid var(--border-color);
-    padding: 0.8rem 2rem;
-    border-radius: 5px;
-    font-size: 1rem;
-    font-family: "PT Sans", sans-serif;
+    padding: 12px 24px;
+    font-size: 16px;
     cursor: pointer;
-    transition: all 0.2s ease;
-    margin: 0.5rem;
-    min-width: 150px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    margin: 10px 0;
+    font-family: "PT Sans", sans-serif;
+    font-weight: 500;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
 
 .back-button {
     background-color: rgba(255, 255, 255, 0.9);

@@ -114,6 +114,112 @@ export const gameState = {
     shouldShowShadeGame() {
         // Show shade game every other round after round 1
         return !this.inNarrative && this.currentRound > 1;
+    },
+
+    // Save game state to localStorage
+    saveGame() {
+        try {
+            const saveData = {
+                currentRound: this.currentRound,
+                redemptionRate: this.redemptionRate,
+                inNarrative: this.inNarrative,
+                gameOver: this.gameOver,
+                previousChoice: this.previousChoice,
+                currentConsequence: this.currentConsequence,
+                showConsequence: this.showConsequence,
+                shadeRound: this.shadeRound,
+                currentOption: this.currentOption,
+                targetShade: this.targetShade,
+                usedAttempts: this.usedAttempts,
+                exhaustedOptions: Array.from(this.exhaustedOptions),
+                failedOptions: Array.from(this.failedOptions),
+                currentAttempts: this.currentAttempts,
+                mode: this.mode,
+                timestamp: Date.now()
+            };
+            localStorage.setItem('luminance_save', JSON.stringify(saveData));
+            console.log('Game saved successfully');
+        } catch (error) {
+            console.error('Failed to save game:', error);
+        }
+    },
+
+    // Load game state from localStorage
+    loadGame() {
+        try {
+            const saveData = localStorage.getItem('luminance_save');
+            if (!saveData) {
+                console.log('No save data found');
+                return false;
+            }
+
+            const parsed = JSON.parse(saveData);
+            
+            // Restore all game state properties
+            this.currentRound = parsed.currentRound || 1;
+            this.redemptionRate = parsed.redemptionRate || 50;
+            this.inNarrative = parsed.inNarrative !== undefined ? parsed.inNarrative : true;
+            this.gameOver = parsed.gameOver || false;
+            this.previousChoice = parsed.previousChoice || null;
+            this.currentConsequence = parsed.currentConsequence || '';
+            this.showConsequence = parsed.showConsequence || false;
+            this.shadeRound = parsed.shadeRound || 0;
+            this.currentOption = parsed.currentOption || null;
+            this.targetShade = parsed.targetShade || null;
+            this.usedAttempts = parsed.usedAttempts || { A: 0, B: 0, C: 0 };
+            this.exhaustedOptions = new Set(parsed.exhaustedOptions || []);
+            this.failedOptions = new Set(parsed.failedOptions || []);
+            this.currentAttempts = parsed.currentAttempts || 0;
+            this.mode = parsed.mode || 'title';
+
+            console.log('Game loaded successfully');
+            console.log('Loaded state:', {
+                round: this.currentRound,
+                redemptionRate: this.redemptionRate,
+                mode: this.mode,
+                previousChoice: this.previousChoice
+            });
+            
+            return true;
+        } catch (error) {
+            console.error('Failed to load game:', error);
+            return false;
+        }
+    },
+
+    // Check if a save exists
+    hasSaveData() {
+        try {
+            const saveData = localStorage.getItem('luminance_save');
+            return saveData !== null;
+        } catch (error) {
+            console.error('Failed to check save data:', error);
+            return false;
+        }
+    },
+
+    // Delete save data
+    deleteSave() {
+        try {
+            localStorage.removeItem('luminance_save');
+            console.log('Save data deleted');
+        } catch (error) {
+            console.error('Failed to delete save data:', error);
+        }
+    },
+
+    // Get save timestamp for display
+    getSaveTimestamp() {
+        try {
+            const saveData = localStorage.getItem('luminance_save');
+            if (!saveData) return null;
+            
+            const parsed = JSON.parse(saveData);
+            return parsed.timestamp || null;
+        } catch (error) {
+            console.error('Failed to get save timestamp:', error);
+            return null;
+        }
     }
 };
 
