@@ -1833,7 +1833,7 @@ Z: {
   }
 },
 
-    36: {
+36: {
     default: "What will you do?",
     options: {
         A: "Don’t push the button",

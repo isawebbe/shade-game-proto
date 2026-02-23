@@ -493,6 +493,23 @@ export class ShadeGame {
         
         console.log(`Selected shade: ${selectedShade}, Target: ${this.targetShade}, Difference: ${difference}, Tolerance: ${tolerance}`);
         
+        // Check if we're in rounds 36 or 37 - always succeed in these rounds
+        if (gameState.currentRound >= 36) {
+            console.log(`Auto-winning shade game for round ${gameState.currentRound} (final rounds)`);
+            
+            console.log('[REDEMPTION CALC]', {
+                option: this.currentOption,
+                round: gameState.currentRound,
+                difference,
+                tolerance,
+                autoWin: true
+            });
+            
+            if (this.onWin) this.onWin();
+            return;
+        }
+        
+        // Normal win/lose logic for rounds 1-35
         if (difference <= tolerance) {
             // Win condition - redemption rate will be updated by main.js
             console.log(`Shade game won for option ${this.currentOption}`);
@@ -501,7 +518,8 @@ export class ShadeGame {
                 option: this.currentOption,
                 round: gameState.currentRound,
                 difference,
-                tolerance
+                tolerance,
+                autoWin: false
             });
             
             if (this.onWin) this.onWin();
