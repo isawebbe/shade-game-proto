@@ -478,58 +478,7 @@ export class ShadeGame {
         }
     }
 
-    checkMatch(selectedShade) {
-        if (this.targetShade === null || this.targetShade === undefined) {
-            console.error('No target shade set in checkMatch!', {
-                targetShade: this.targetShade,
-                currentOption: this.currentOption,
-                gameStateTargetShade: gameState.targetShade
-            });
-            return;
-        }
-        
-        const difference = Math.abs(selectedShade - this.targetShade);
-        const tolerance = TOLERANCE[this.currentOption] || 10;
-        
-        console.log(`Selected shade: ${selectedShade}, Target: ${this.targetShade}, Difference: ${difference}, Tolerance: ${tolerance}`);
-        
-        // Check if we're in rounds 36 or 37 - always succeed in these rounds
-        if (gameState.currentRound >= 36) {
-            console.log(`Auto-winning shade game for round ${gameState.currentRound} (final rounds)`);
-            
-            console.log('[REDEMPTION CALC]', {
-                option: this.currentOption,
-                round: gameState.currentRound,
-                difference,
-                tolerance,
-                autoWin: true
-            });
-            
-            if (this.onWin) this.onWin();
-            return;
-        }
-        
-        // Normal win/lose logic for rounds 1-35
-        if (difference <= tolerance) {
-            // Win condition - redemption rate will be updated by main.js
-            console.log(`Shade game won for option ${this.currentOption}`);
-            
-            console.log('[REDEMPTION CALC]', {
-                option: this.currentOption,
-                round: gameState.currentRound,
-                difference,
-                tolerance,
-                autoWin: false
-            });
-            
-            if (this.onWin) this.onWin();
-        } else {
-            console.log('No match');
-            this.loseAttempt();
-    }
-}
-
-setupEventListeners() {
+    setupEventListeners() {
     const spectrum = this.container.querySelector('#spectrum');
     if (!spectrum) {
         console.error('Spectrum element not found!');
@@ -605,79 +554,78 @@ hideCommitButton() {
 }
 
 handleCommit() {
-    if (this.selectedShade === null || this.selectedShade === undefined) {
-        console.warn('No shade selected to commit');
-        return;
-    }
-        
-    const currentShade = this.selectedShade;
-        
-    if (this.commitButton) {
-        this.commitButton.disabled = true;
-        this.commitButton.style.opacity = '0.7';
-    }
-        
-    setTimeout(() => {
-        this.checkMatch(currentShade);
-            
-        if (this.commitButton) {
-            this.commitButton.disabled = false;
-            this.commitButton.style.opacity = '1';
+        if (this.selectedShade === null || this.selectedShade === undefined) {
+            console.warn('No shade selected to commit');
+            return;
         }
-    }, 300);
-}
-
-checkMatch(selectedShade) {
-    if (this.targetShade === null || this.targetShade === undefined) {
-        console.error('No target shade set in checkMatch!', {
-            targetShade: this.targetShade,
-            currentOption: this.currentOption,
-            gameStateTargetShade: gameState.targetShade
-        });
-        return;
-    }
         
-    const difference = Math.abs(selectedShade - this.targetShade);
+        const currentShade = this.selectedShade;
         
-if (this.commitButton) {
-    this.commitButton.disabled = true;
-    this.commitButton.style.opacity = '0.7';
-}
+        if (this.commitButton) {
+            this.commitButton.disabled = true;
+            this.commitButton.style.opacity = '0.7';
+        }
         
-setTimeout(() => {
-    this.checkMatch(currentShade);
+        setTimeout(() => {
+            this.checkMatch(currentShade);
             
-    if (this.commitButton) {
-        this.commitButton.disabled = false;
-        this.commitButton.style.opacity = '1';
+            if (this.commitButton) {
+                this.commitButton.disabled = false;
+                this.commitButton.style.opacity = '1';
+            }
+        }, 300);
     }
-}, 300);
-}
 
-checkMatch(selectedShade) {
-if (this.targetShade === null || this.targetShade === undefined) {
-    console.error('No target shade set in checkMatch!', {
-        targetShade: this.targetShade,
-        currentOption: this.currentOption,
-        gameStateTargetShade: gameState.targetShade
-    });
-    return;
-}
+    checkMatch(selectedShade) {
+        if (this.targetShade === null || this.targetShade === undefined) {
+            console.error('No target shade set in checkMatch!', {
+                targetShade: this.targetShade,
+                currentOption: this.currentOption,
+                gameStateTargetShade: gameState.targetShade
+            });
+            return;
+        }
         
-const difference = Math.abs(selectedShade - this.targetShade);
-const tolerance = TOLERANCE[this.currentOption] || 10;
+        const difference = Math.abs(selectedShade - this.targetShade);
+        const tolerance = TOLERANCE[this.currentOption] || 10;
         
-console.log(`Selected shade: ${selectedShade}, Target: ${this.targetShade}, Difference: ${difference}, Tolerance: ${tolerance}`);
+        console.log(`Selected shade: ${selectedShade}, Target: ${this.targetShade}, Difference: ${difference}, Tolerance: ${tolerance}`);
         
-if (difference <= tolerance) {
-    // Win condition - redemption rate will be updated by main.js
-    console.log(`Shade game won for option ${this.currentOption}`);
-    this.onWin();    
-} else {
-    console.log('No match');
-    this.loseAttempt();
-}
-}
+        // Check if we're in rounds 36 or 37 - always succeed in these rounds
+        if (gameState.currentRound >= 36) {
+            console.log(`Auto-winning shade game for round ${gameState.currentRound} (final rounds)`);
+            
+            console.log('[REDEMPTION CALC]', {
+                option: this.currentOption,
+                round: gameState.currentRound,
+                difference,
+                tolerance,
+                autoWin: true
+            });
+            
+            if (this.onWin) this.onWin();
+            return;
+        }
+        
+        // Normal win/lose logic for rounds 1-35
+        if (difference <= tolerance) {
+            // Win condition - redemption rate will be updated by main.js
+            console.log(`Shade game won for option ${this.currentOption}`);
+            
+            console.log('[REDEMPTION CALC]', {
+                option: this.currentOption,
+                round: gameState.currentRound,
+                difference,
+                tolerance,
+                autoWin: false
+            });
+            
+            if (this.onWin) this.onWin();
+        } else {
+            console.log('No match');
+            this.loseAttempt();
+        }
+    }
 
 handleBackToOptions() {
     try {
