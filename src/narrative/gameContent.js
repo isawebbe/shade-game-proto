@@ -1243,7 +1243,7 @@ Z: {
 },
 25: {
     W: {
-        text: "Now Vasily delivers to you personally a typed message (in duplicate) that could probably have been sent by tube.<br><br>It says that your car has been temporarily impounded to an off site location that is a few miles both from the base and your home. His taut and anxious smile betrays some small sympathy.",
+        text: "Now Vasily delivers to you personally a typed message (in duplicate) that could probably have been sent by tube.<br><br>It says that your car has been temporarily impounded to an on-site but undisclosed location. His taut and anxious smile betrays some small sympathy.",
         options: {
             A: "He just is doing his job",
             B: "How did such a man infiltrate your military?",
@@ -1257,7 +1257,7 @@ Z: {
     },
 
     X: {
-        text: "Now Vasily delivers to you personally a typed message (in duplicate) that could probably have been sent by tube.<br><br>It says that your car has been temporarily impounded to an off site location that is a few miles both from the base and your home. He says he wanted to let you know in person. His voice makes sounds of smiling even though he is not.",
+        text: "Now Vasily delivers to you personally a typed message (in duplicate) that could probably have been sent by tube.<br><br>It says that your car has been temporarily impounded to on-site but undisclosed location. He says he wanted to let you know in person. His voice makes sounds of smiling even though he is not.",
         options: {
             A: "He just is doing his job",
             B: "How did such a man infiltrate your military??",
@@ -1271,7 +1271,7 @@ Z: {
     },
 
     Y: {
-        text: "Now Vasily delivers to you personally a typed message (in duplicate) that could probably have been sent by tube.<br><br>It says that your car has been temporarily impounded to an off site location that is a few miles both from the base and your home. He says he wanted to let you know in person. His punchable face makes sounds of smiling even though he is not.",
+        text: "Now Vasily delivers to you personally a typed message (in duplicate) that could probably have been sent by tube.<br><br>It says that your car has been temporarily impounded to an on-site but undisclosed location. He says he wanted to let you know in person. His punchable face makes sounds of smiling even though he is not.",
         options: {
             A: "He just is doing his job",
             B: "How did such a man infiltrate your military??",
@@ -1285,7 +1285,7 @@ Z: {
     },
 
     Z: {
-        text: "Now Vasily delivers to you personally a typed message (in duplicate) that could probably have been sent by tube.<br><br>It says that your car has been temporarily impounded to an off site location that is a few miles both from the base and your home. He says he wanted to let you know in person. You avow that he is smiling while imparting yet another figurative kick in your military grade pants.",
+        text: "Now Vasily delivers to you personally a typed message (in duplicate) that could probably have been sent by tube.<br><br>It says that your car has been temporarily impounded to an on-site but undisclosed location. He says he wanted to let you know in person. You avow that he is smiling while imparting yet another figurative kick in your military grade pants.",
         options: {
             A: "He just is doing his job",
             B: "How did such a man infiltrate your military??",
