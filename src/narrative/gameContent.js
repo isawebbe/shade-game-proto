@@ -57,7 +57,7 @@ export const gameContent = {
                     C: "Consider to not leave the bed"
                 },
                 consequences: {
-                    A: "Even though this could make you late for work, you are grateful for the gesture and feel a wink of what drew you to her in the first place. It is the small kindnesses - an old man stooping to replace a return the lost flower hat of a child, or Emile the immigrant boy feeding the stray cats of the neighborhood. Or Julia as a young baker girl in a red dress, surrendering her seat on the train for a critically pregnant woman.<br><br>Seeing Julia with Vanya and Stan Jr. touches you especially. If Heaven were real, could it be something so humble as this little life you have built together?<br><br>Though her coughs concern you.",
+                    A: "Even though this could make you late for work, you are grateful for the gesture and feel a wink of what drew you to her in the first place. It is the small kindnesses - an old man stooping to return the lost flower hat of a child, or Emile the immigrant boy feeding the stray cats of the neighborhood. Or Julia as a young baker girl in a red dress, surrendering her seat on the train for a critically pregnant woman.<br><br>Seeing Julia with Vanya and Stan Jr. touches you especially. If Heaven were real, could it be something so humble as this little life you have built together?<br><br>Though her coughs concern you.",
                     B: "07:04! This woman has no organs for running a household. But you knew this and still you had two children with her. Between you both, you cannot decide who is more empty-headed. For example, for days she has claimed she will go to the doctor about this cough and still the cough persists, waking you up in the night. Perhaps she is waiting for a sign from Heaven (which is imaginary, you reshape the phrase only).",
                     C: "On some dark days you think it would be nothing to remain under the covers until you wasted away in the fashion of an anorexic saint. A martyr to the cause of causelessness. (Saints and martyrs being imaginary figures, you reshape the constructs only.) Now you lay and reflect how Julia is growing farther away in spirit. She did not wake you because she cannot stand the sight of you, perhaps, a reminder of the richer, stronger, more beautiful men she could have been with. Perhaps.<br><br>You hear little of her noise besides her coughs."
                 }
@@ -70,7 +70,7 @@ export const gameContent = {
                     C: "Consider to not leave the bed"
                 },
                 consequences: {
-                    A: "Even though this could make you late for work, you are grateful for the gesture and feel a wink of what drew you to her in the first place. It is the small kindnesses - an old man stooping to replace a return the lost flower hat of a child, or Emile the immigrant boy feeding the stray cats of the neighborhood. Or Julia as a young baker girl in a red dress, surrendering her seat on the train for a critically pregnant woman.<br><br>Seeing Julia with Vanya and Stan Jr. touches you especially. If Heaven were real, could it be something so humble as this little life you have built together?<br><br>Though her coughs concern you.",
+                    A: "Even though this could make you late for work, you are grateful for the gesture and feel a wink of what drew you to her in the first place. It is the small kindnesses - an old man stooping to return the lost flower hat of a child, or Emile the immigrant boy feeding the stray cats of the neighborhood. Or Julia as a young baker girl in a red dress, surrendering her seat on the train for a critically pregnant woman.<br><br>Seeing Julia with Vanya and Stan Jr. touches you especially. If Heaven were real, could it be something so humble as this little life you have built together?<br><br>Though her coughs concern you.",
                     B: "07:04! This woman has no organs for running a household. But you knew this and still you had two children with her. Between you both, you cannot decide who is more empty-headed. For example, for days she has claimed she will go to the doctor about this cough and still the cough persists, waking you up in the night. Perhaps she is waiting for a sign from Heaven (which is imaginary, you reshape the phrase only).",
                     C: "On some dark days you think it would be nothing to remain under the covers until you wasted away in the fashion of an anorexic saint. A martyr to the cause of causelessness. (Saints and martyrs being imaginary figures, you reshape the constructs only.) Now you lay and reflect how Julia is growing farther away in spirit. She did not wake you because she cannot stand the sight of you, perhaps, a reminder of the richer, stronger, more beautiful men she could have been with. Perhaps.<br><br>You hear little of her noise besides her coughs."
                 }
@@ -83,7 +83,7 @@ export const gameContent = {
                     C: "Consider to not leave the bed"
                 },
                 consequences: {
-                    A: "Even though this could make you late for work, you are grateful for the gesture. Small kindnesses that tend to go unnoticed–an old man stooping to replace the lost flower hat of a child, or Emile the immigrant boy feeding the stray cats of the neighborhood. Or Julia as a young baker girl in a red dress, surrendering her seat on the train for a critically pregnant woman.<br><br>Seeing Julia with Vanya and Stan Jr. touches you especially. Were God real and legal to thank, you might for your luck.<br><br>Though her coughs are starting to concern you.",
+                    A: "Even though this could make you late for work, you are grateful for the gesture. Small kindnesses that tend to go unnoticed–an old man stooping to return the lost flower hat of a child, or Emile the immigrant boy feeding the stray cats of the neighborhood. Or Julia as a young baker girl in a red dress, surrendering her seat on the train for a critically pregnant woman.<br><br>Seeing Julia with Vanya and Stan Jr. touches you especially. Were God real and legal to thank, you might for your luck.<br><br>Though her coughs are starting to concern you.",
                     B: "This woman has no organs for running a household. But you knew this and still had two children with her. Between you both, you cannot decide who is more empty-headed. For example, for days she has claimed she will go to the doctor regarding this cough and still the cough persists, waking you up in the night. Perhaps she waits for an invitation from heaven (which is imaginary, you are reshaping the phrase only).",
                     C: "It would be nothing to lay under the covers until you wasted away in the fashion of an anorexic saint. A martyr to the cause of causelessness. (Saints and martyrs being imaginary figures, you are reshaping the constructs only.)<br><br>Lately you have felt Julia is becoming far away in spirit. Probably she did not wake you because she cannot stand the sight of you, a reminder of the richer, stronger, more beautiful men she could have been with. You are certain you have seen her smirk in disgust when you tell her about your day, its dull ups and downs, so you have stopped telling her about it at all. You hear little of her noise besides her coughs."
                 }
@@ -146,7 +146,7 @@ export const gameContent = {
                 }
             },
             X: {
-                text: "Julia asks if you plan to visit Ilya before work.<br><br>This question surprises you. Not even the cockroaches in the walls mentioned her brother. Your wife is sometimes having quality vision.",
+                text: "Julia asks if you plan to visit Ilya before work.<br><br>This question surprises you. Not even the cockroaches in the walls mentioned her brother. Sometimes your wife is having quality vision.",
                 options: {
                     A: "Insist that you plan to reason with him",
                     B: "Lie to her",
@@ -214,11 +214,11 @@ export const gameContent = {
             }
         },
         7: {
-    W: {
+        W: {
         text: "Vanya is curling as a fallen leaf and facing the wall.<br><br>She stirs when she hears you enter the room, and your heart with her. If your child feels not strong enough for the world today then you are ready to carry it for her.",
         options: {
             A: "Ask her if she feels okay",
-            B: "Ask her what is wrong with her",
+            B: "Ask her what she thinks she is doing",
             C: "Be the discipline"
         },
         consequences: {
@@ -228,11 +228,11 @@ export const gameContent = {
         }
     },
 
-    X: {
+        X: {
         text: "Vanya is curling as a fallen leaf and facing the wall.<br><br>She stirs when she hears you enter the room, though she is not moved to get up. Well, you think, time to be a father.",
         options: {
             A: "Ask her if she feels okay",
-            B: "Ask her what is wrong with her",
+            B: "Ask her what she thinks she is doing",
             C: "Be the discipline"
         },
         consequences: {
@@ -242,11 +242,11 @@ export const gameContent = {
         }
     },
 
-    Y: {
+     Y: {
         text: "Vanya is curling as a fallen leaf and facing the wall.<br><br>She stirs when she hears you enter the room, though she is not moved to get up. As a parent you possess many tactics of coercing and persuading and you prepare to use them all.",
         options: {
             A: "Ask her if she feels okay",
-            B: "Ask her what is wrong with her",
+            B: "Ask her what what she thinks she is doing",
             C: "Be the discipline"
         },
         consequences: {
@@ -256,11 +256,11 @@ export const gameContent = {
         }
     },
 
-    Z: {
+     Z: {
         text: "Vanya is curling as a fallen leaf and facing the wall.<br><br>She stirs when she hears you enter the room, though she is not moved to get up.<br><br>Why did you choose this? Coercing your child to embrace a new day in a world that will not return her embrace unless she fights for it is a miserable task.",
         options: {
             A: "Ask her if she is feeling okay",
-            B: "Ask her what is wrong with her",
+            B: "Ask her what she thinks she is doing",
             C: "Be the discipline"
         },
         consequences: {
@@ -273,16 +273,16 @@ export const gameContent = {
 
 8: {
     W: {
-        text: "Now that everyone is finally where they are supposed to be, it is time for the road. Your car begins without complaint but smells faintly of gas. Hopefully it is your nose making tricks.<br><br>The flat is in a less than reputable administrative district. If the FBA made a movie about his neighborhood, probably it would be the tale of the good policeman who took no money as this would make him a bad policeman. You enjoy to think that while a hard hungry life can make a hard hungry man, always if he wants to look there is bread for his soul. As you pass weary and broken and tattered residents, however, you wonder how many see anything except their two feet, shuffling here and there in the fashion of almost dead pigeons.<br><br>It is a sad thing.<br><br>At your destination you begin to climb the ten stories to where Ilya's flat.<br><br>On the second floor landing, a child is scratching at the wall and eating the resulting paint flakes.",
+        text: "Now that everyone is finally where they are supposed to be, it is time for the road.<br><br>Your car begins without complaint but smells faintly of gas. Hopefully it is your nose making tricks.<br><br>The flat is in a less than reputable administrative district. If the FBA made a movie about his neighborhood, probably it would be the tale of the good policeman who took no money as this would make him a bad policeman. You enjoy to think that while a hard hungry life can make a hard hungry man, always if he wants to look there is bread for his soul. As you pass weary and broken and tattered residents, however, you wonder how many see anything except their two feet, shuffling here and there in the fashion of almost dead pigeons.<br><br>It is a sad thing.<br><br>At your destination you leap over a stubbled man who sleeps deeply in the doorway and begin to climb the ten stories to where Ilya is likely sleeping.<br><br>On the second floor landing, a child is scratching at the wall and eating the resulting paint flakes.",
         options: {
             A: "Stop her",
             B: "Reprimand her",
             C: "Shrug"
         },
         consequences: {
-            A: "You pull a dollar from your wallet and tell her to get her mother to buy her a sweet instead. As she runs off you continue your ascent, ruminating briefly on the dollar’s flailing value.",
-            B: "You briefly educate her on lead poisoning. She starts to cry and asks if she will die. Oh, gosh. You continue your ascent.",
-            C: "The bitter truth is if lead poisoning does not kill someone as her in a place as this, it will surely be something else. Such nastiness burdens you further as you continue your ascent."
+            A: "You pull a dollar from your wallet and tell her to get her mother to buy her a sweet instead. As she bounces away, you pray (to someone, anyone) that her paint ingestion ceases on this day, for the quality of medical treatment in your country peaks at diagnostic stages and plummets thereafter. You are reminded of Julia’s inattendance to her cough—for to be jabbed and jostled only for to be given pills that might or might not work, well, it can be said you understand if Julia feels unkeen on the prospect.<br><br>You continue your ascent.",
+            B: "You briefly educate her on lead poisoning. She starts to cry and asks if she will die. No, you tell her, though you know this is likely untrue given that the quality of medical care in your country peaks at diagnostics and plummets thereafter.<br><br>You continue your ascent.",
+            C: "The bitter truth is if lead poisoning does not kill someone like her in a place like this, it will surely be something else. The quality of medical care in your country peaks at diagnostics and plummets thereafter. Such nastiness burdens you further as you continue your ascent."
         }
     },
 
@@ -294,9 +294,9 @@ export const gameContent = {
             C: "Shrug"
         },
         consequences: {
-            A: "You pull a dollar from your wallet and tell her to get her mother to buy her a sweet instead. As she runs off you continue your ascent, ruminating briefly on the dollar’s flailing value. Probably she will not afford anything but at least she has ceased her extracurricular toxic ingestion.",
-            B: "You briefly educate her on lead poisoning. She starts to cry and asks if she will die. Good, maybe now she will stop eating paint. You continue your ascent.",
-            C: "The bitter truth is if lead poisoning does not kill someone as her in a place as this, it will surely be something else. More proof of your country’s greatness. You continue your ascent."
+            A: "You pull a dollar from your wallet and tell her to get her mother to buy her a sweet instead. As she bounces away, you are reminded of the quality of medical care in your country, how it will probably fail someone so vulnerable should she continue making questionable culinary choices.<br><br>You continue your ascent.",
+            B: "You briefly educate her on lead poisoning. She starts to cry and asks if she will die. Good, maybe now she will stop eating paint. Someone as her cannot afford to make culinary gambles, you tell her, for the medical care in your country peaks at diagnostics and plummets thereafter. She cries more.<br><br>You continue your ascent.",
+            C: "The bitter truth is if lead poisoning does not kill someone like her in a place like this, it will surely be something else. The quality of medical care in your country peaks at diagnostics and plummets thereafter. More proof of your country’s greatness.<br><br>You continue your ascent."
         }
     },
 
@@ -304,13 +304,13 @@ export const gameContent = {
         text: "Now that everyone is finally where they are supposed to be, it is time for the road.<br><br>Your car begins without complaint but smells faintly of gas. Of course it does.<br><br>The flat of Ilya is in a less than reputable administrative district, one you do not visit for its scenery or for any other reason. If the FBA made a movie about his neighborhood, most likely it would be the horrible comedy in which an inconsequential office worker attempts to become consequential when he implicates his senior officers in prostitutional engagement at his flat. At least you think this is what the movie was about. Two women talked there about something that must have been very important as their discussions persevered through your many and persuasive entreaties against petty distraction. Perhaps also they were prostitutes and writing plans for an evening of heathenry. In this district such things are common.<br><br>At the building of Ilya you pick your way over a stubbled man who sleeps deeply in the doorway and begin to climb the ten stories to where Ilya is likely lounging much as a sunning lizard would lounge.<br><br>On the second floor landing, a child is scratching at the wall and eating the resulting paint flakes.",
         options: {
             A: "Stop her",
-            B: "Where ever are the parents like this?",
+            B: "Where ever are the parents in these times?",
             C: "Shrug"
         },
         consequences: {
-            A: "You pull a dollar from your wallet and tell her to get her mother to buy her a sweet instead. As she runs off you continue your ascent, ruminating on the dollar’s flailing value. Maybe she won’t be able to buy anything at all. Well. Now at least she is engaged in healthier extracurricular activity.",
-            B: "You briefly educate her on lead poisoning. She starts to cry and asks if she will die. Good, maybe now she will stop eating paint. You continue your ascent.",
-            C: "If lead poisoning does not kill someone as her in a place as this, it will surely be something else. Unless perhaps she arrives from generations of slackjawed paint eaters who developed accommodations for such things. Animals, you think.<br><br>You continue your ascent."
+            A: "You pull a dollar from your wallet and tell her to get her mother to buy her a sweet instead. As she runs off, you are reminded of the quality of medical care in your country, how it will probably fail someone so stupid should she continue making questionable culinary choices.<br><br>Probably even she will not be able to afford anything, given the dollars flailing value. Still, you tried at least.<br><br>You continue your ascent.",
+            B: "You briefly educate her on lead poisoning. She starts to cry and asks if she will die. Good, maybe now she will stop eating paint. Someone as her cannot afford to make culinary gambles, you tell her, for the medical care in your country peaks at diagnostics and plummets thereafter. Also you make comments on the intellect of her parents. She cries more.<br><br>You continue your ascent.",
+            C: "The quality of medical care in your country peaks at diagnostics and plummets thereafter, and if lead poisoning does not kill someone like her in a place like this, it will surely be something else. Unless perhaps she arrives from generations of slackjawed paint eaters who developed accommodations for such things. Animals, you think.<br><br>You continue your ascent."
         }
     },
 
@@ -318,13 +318,13 @@ export const gameContent = {
         text: "Now that everyone is finally where they are supposed to be, it is time for the road.<br><br>Your car begins without complaint but smells faintly of gas. Briefly you consider the benefits of you to be inside the car if or when it explodes.<br><br>The flat of Ilya is in a less than reputable administrative district, one you do not visit for its scenery or for any other reason. If the FBA made a movie about his neighborhood, most likely it would be the horror with the chicken headed taximotorist who drives in Hell among demons and therefore becomes a demon. Such broken creatures people these streets after the fashion of cockroaches, doing unthinkable violence against themselves or others to survive one more unthinkable day. Looking and acting as people when in truth they are trustless monsters who would tenderly brandish all manner of weaponry in an effort to relieve you of whatever can separate from you.<br><br>At the building of Ilya you pick your way over a stubbled man who sleeps deeply in the doorway and begin to climb the ten stories to where Ilya is likely lounging much as a sunning lizard would lounge.<br><br>On the second floor landing, a child is scratching at the wall and eating the resulting paint flakes.",
         options: {
             A: "Stop her",
-            B: "Where ever are the parents with this?",
+            B: "Where ever are the parents in these times?",
             C: "Shrug"
         },
         consequences: {
-            A: "You pull a dollar from your wallet and tell her to get her mother to buy her a sweet instead. As she runs off you continue your ascent, ruminating briefly on the dollar’s flailing value.",
-            B: "You briefly educate her on lead poisoning. She starts to cry and asks if she will die. Good, maybe now she will stop eating paint. You continue your ascent.",
-            C: "You laugh an empty laugh. Much after the fashion of her paint ingestion, places as this chew ones as her into pieces. Likely she arrives from generations of slackjawed paint eaters who were not clever enough to devise other healthful means of nutritional acquisition. Perhaps she will be the last. What wonderful news for her, and what more proof of your country’s greatness?"
+            A: "You pull a dollar from your wallet and tell her to get her mother to buy her a sweet instead. As she runs off, you are reminded of the quality of medical care in your country, how it will probably fail someone so stupid and small should she continue making questionable culinary choices.<br><br>You are now worth one dollar less and uncertain if this was the right thing to do.<br><br>You continue your ascent.",
+            B: "Probably they, the parents, are, after some fashion, even stupider than one who eats paint. Perhaps they are the ones who instructed such.<br><br>You briefly educate her on lead poisoning. She starts to cry and asks if she will die. You tell her that the quality of medical care in your country peaks at diagnostics and nosedives thereafter, so yes, probably. She cries more.<br><br>You continue your ascent.",
+            C: "You laugh an empty laugh. Much after the fashion of her paint ingestion, places as this chew ones as her into pieces. Likely she arrives from generations of slackjawed paint eaters who were not clever enough to devise other healthful means of nutritional acquisition.<br><br>Perhaps she will be the last. After all, the quality of medical care in your country peaks at diagnostics and plummets with swiftness thereafter. What wonderful news for her, and what more proof of your country’s greatness?<br><br>You continue your ascent."
         }
     }
 },
@@ -678,7 +678,7 @@ Z: {
     options: {
         A: "Apologize for your intrusion",
         B: "You are asking the questions here",
-        C: "Ignore him and search the places where he usually stashes money"
+        C: "Ignore him and search the places where he stashes money usually"
     },
     consequences: {
         A: "You admit that Lieutenant Bother-in-Law is funny.<br><br>You deal with Ilya the same way you deal with Vanya or Stan Jr., somewhere between gentle/firm and tough/fair. It sort of depends on the day. You wish you could be more consistent in your parenting style as it distresses you to think of the consequences, such as becoming a person as your brother-in-law, which is perhaps unjust but even Ilya has expressed many times the undesirability of his life shape.<br><br>You explain you would not have disrupted his morning affairs unless it was important.",
@@ -692,7 +692,7 @@ X: {
     options: {
         A: "Apologize for your intrusion",
         B: "You are asking the questions here",
-        C: "Ignore him and search the places where he usually stashes money"
+        C: "Ignore him and search the places where he stashes money usually"
     },
     consequences: {
         A: "You admit that Lieutenant Bother-in-Law is kind of funny.<br><br>You deal with Ilya the same way you deal with Vanya or Stan Jr., somewhere between gentle/firm and tough/fair. It sort of depends on the day. You wish you could be more consistent in your parenting style as it distresses you to think of the consequences, such as becoming a person as your brother-in-law, which would be unideal.<br><br>You explain you would not have disrupted his morning affairs unless it was important.",
@@ -706,7 +706,7 @@ Y: {
     options: {
         A: "Apologize for your intrusion",
         B: "You are asking questions here",
-        C: "Ignore him and search the places where he usually stashes money"
+        C: "Ignore him and search the places where he stashes money usually"
     },
     consequences: {
         A: "You hate to admit that Lieutenant Bother-in-Law is kind of funny.<br><br>If you have learned anything from fathering, it is to never apologize, for this opens windows through which enterprising little girls steal excessive advantage. This is bad for building children who are strong of spine and do not lose their bones over unpleasant tides of fate. So you are telling yourself and your wife, who apologizes for everything including which is not in her influence.<br><br>Thinking of her, you do apologize and to your surprise come very close to meaning it. You attempt a conversational line of tough-but-fair, gentle-but-firm reassurances that you would not be here–really, you would not–unless it was important.",
@@ -720,7 +720,7 @@ Z: {
     options: {
         A: "Apologize for your intrusion",
         B: "You are asking questions here",
-        C: "Ignore him and search the places where he usually stashes money"
+        C: "Ignore him and search the places where he stashes money usually"
     },
     consequences: {
         A: "You hate to admit that Lieutenant Bother-in-Law is kind of funny.<br><br>If you have learned anything from fathering, it is to never apologize, for this opens windows through which enterprising little girls steal excessive advantage. This is bad for building children who are strong of spine and do not lose their bones over unpleasant tides of fate. So you are telling yourself and your wife, who apologizes for everything including which is not in her influence.<br><br>Thinking of her, you do apologize and to your surprise come very close to meaning it. You attempt a conversational line of tough-but-fair, gentle-but-firm reassurances that you would not be here–really, you would not–unless it was important.",
@@ -1354,7 +1354,7 @@ Z: {
   },
   27: {
     W: {
-      text: "An officer whose name and rank you forget arrives with the white non-emergency telephone and informs you that your wife has called.<br><br>How strange. You pick up.<br><br>Julia asks how you are. You ask how she is. It sounds very busy on her side of the call.<br><br>She says that she knows you went to see her brother-in-law. What did he tell you?",
+      text: "An officer whose name and rank you forget arrives with the white non-emergency telephone and informs you that your wife has called.<br><br>How strange. You pick up.<br><br>Julia asks how you are. You ask how she is. It sounds very busy on her side of the call.<br><br>She says that she knows you went to see her brother. What did he tell you?",
       options: {
         A: "He plans to pay you back",
         B: "He told lies about a sick friend",
@@ -1367,7 +1367,7 @@ Z: {
       }
     },
     X: {
-      text: "An officer whose name and rank you forget arrives with the white non-emergency telephone and informs you that your wife has called.<br><br>Strange for her to be calling you at work. You pick up.<br><br>Julia asks how you are. You ask how she is. It sounds very busy on her side of the call.<br><br>She says that she knows you went to see her brother-in-law. What did he tell you?",
+      text: "An officer whose name and rank you forget arrives with the white non-emergency telephone and informs you that your wife has called.<br><br>Strange for her to be calling you at work. You pick up.<br><br>Julia asks how you are. You ask how she is. It sounds very busy on her side of the call.<br><br>She says that she knows you went to see her brother. What did he tell you?",
       options: {
         A: "He plans to pay you back",
         B: "He told lies about a sick friend",
@@ -1393,7 +1393,7 @@ Z: {
       }
     },
     Z: {
-      text: "An officer whose name and rank you forget arrives with the white non-emergency telephone and informs you that your wife has called.<br><br>You have imagined such a call–she loathes you, she is leaving you–but such were the perverse fantasies of a beastly, hateful creature as yourself. Every day she spends with you is a day she deserves to be happy with someone else.<br><br>Perhaps the day is today.<br><br>You pick up.<br><br>Julia asks how you are. You ask how she is. It sounds very busy on her side of the call.<br><br>She says that she knows you went to see her brother-in-law. What did he tell you?",
+      text: "An officer whose name and rank you forget arrives with the white non-emergency telephone and informs you that your wife has called.<br><br>You have imagined such a call–she loathes you, she is leaving you–but such were the perverse fantasies of a beastly, hateful creature as yourself. Every day she spends with you is a day she deserves to be happy with someone else.<br><br>Perhaps the day is today.<br><br>You pick up.<br><br>Julia asks how you are. You ask how she is. It sounds very busy on her side of the call.<br><br>She says that she knows you went to see her brother. What did he tell you?",
       options: {
         A: "He plans to pay you back",
         B: "He told lies about a sick friend",
@@ -1411,7 +1411,7 @@ Z: {
     text: "The noise in the background makes it difficult to hear.<br><br>You ask where she is. The doctor, she says.",
     options: {
       A: "You are glad to hear it",
-      B: "Finally already",
+      B: "Is she wanting an award?",
       C: "She is lying"
     },
     consequences: {
@@ -1424,7 +1424,7 @@ Z: {
     text: "The noise in the background makes it difficult to hear.<br><br>You ask where she is. The doctor, she says.",
     options: {
       A: "You are glad to hear it",
-      B: "Finally already",
+      B: "Is she wanting an award?",
       C: "She is lying"
     },
     consequences: {
@@ -1437,7 +1437,7 @@ Z: {
     text: "The noise in the background makes it difficult to hear.<br><br>You ask where she is. The doctor, she says.",
     options: {
       A: "You are glad to hear it",
-      B: "Finally already",
+      B: "Is she wanting an award?",
       C: "She is lying"
     },
     consequences: {
@@ -1450,7 +1450,7 @@ Z: {
     text: "The noise in the background makes it difficult to hear.<br><br>You ask where she is. The doctor, she says.",
     options: {
       A: "You are glad to hear it",
-      B: "About time",
+      B: "Is she wanting an award?",
       C: "She is lying"
     },
     consequences: {
