@@ -1,5 +1,6 @@
 import { getNarrative, getOptions, getConsequence, gameContent, getVariant } from './gameContent.js';
 import { gameState } from '../state/gameState.js';
+import { VisitorCounter } from '../utils/visitorCounter.js';
 
 export class NarrativeGame {
     constructor(container) {
@@ -8,10 +9,15 @@ export class NarrativeGame {
         this.onTransitionToShade = null;
         this.gameOrchestrator = null; // Will be set by the orchestrator
         this.autoProgressTimer = null; // Timer for auto-progression from round 33
+        this.visitorCounter = new VisitorCounter();
+        this.redemptionVisible = false; // Start hidden
+        this.roundVisible = false; // Start hidden
     }
 
     init() {
         this.updateScoreDisplay();
+        this.updateVisitorCounter();
+        this.setupKeyCommands();
     }
 
     showConsequences() {
@@ -470,6 +476,8 @@ export class NarrativeGame {
     updateScoreDisplay() {
         const redemptionRateDisplay = this.container.querySelector('#redemption-rate');
         const roundDisplay = this.container.querySelector('#round-display');
+        const redemptionRow = this.container.querySelector('.redemption-row');
+        const roundRow = this.container.querySelector('.round-row');
 
         if (redemptionRateDisplay) {
             redemptionRateDisplay.textContent = Math.round(gameState.redemptionRate);
@@ -479,6 +487,49 @@ export class NarrativeGame {
         if (roundDisplay) {
             roundDisplay.textContent = gameState.currentRound;
         }
+
+        // Apply initial hidden state
+        if (redemptionRow) {
+            redemptionRow.classList.toggle('hidden', !this.redemptionVisible);
+        }
+        if (roundRow) {
+            roundRow.classList.toggle('hidden', !this.roundVisible);
+        }
+    }
+
+    updateVisitorCounter() {
+        const visitorCountDisplay = this.container.querySelector('#visitor-count');
+        if (visitorCountDisplay) {
+            visitorCountDisplay.textContent = this.visitorCounter.getUniqueVisitors();
+        }
+    }
+
+    setupKeyCommands() {
+        document.addEventListener('keydown', (e) => {
+            // Toggle both redemption rate and round visibility with 'R' key
+            if (e.key === 'r' || e.key === 'R') {
+                e.preventDefault();
+                this.toggleScoreDisplay();
+            }
+        });
+    }
+
+    toggleScoreDisplay() {
+        const redemptionRow = this.container.querySelector('.redemption-row');
+        const roundRow = this.container.querySelector('.round-row');
+        
+        // Toggle both visibility states
+        this.redemptionVisible = !this.redemptionVisible;
+        this.roundVisible = !this.roundVisible;
+        
+        if (redemptionRow) {
+            redemptionRow.classList.toggle('hidden', !this.redemptionVisible);
+        }
+        if (roundRow) {
+            roundRow.classList.toggle('hidden', !this.roundVisible);
+        }
+        
+        console.log(`Score display ${this.redemptionVisible ? 'shown' : 'hidden'} (redemption rate & round)`);
     }
 
     startAutoProgressTimer() {

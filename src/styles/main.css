@@ -216,6 +216,56 @@ body:has(#narrative-screen:not(.hidden)) {
     margin-left: 10px;
 }
 
+.redemption-row {
+    transition: opacity 0.3s ease;
+}
+
+.redemption-row.hidden {
+    opacity: 0;
+}
+
+.round-row {
+    transition: opacity 0.3s ease;
+}
+
+.round-row.hidden {
+    opacity: 0;
+}
+
+/* ==================== VISITOR COUNTER ==================== */
+.visitor-counter {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba(0, 0, 0, 0.85);
+    color: white;
+    padding: 8px 15px;
+    border-radius: 6px;
+    font-size: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.visitor-counter:hover {
+    opacity: 1;
+}
+
+.visitor-count {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 100px;
+}
+
+#visitor-count {
+    font-weight: bold;
+    color: #888888;
+    margin-left: 8px;
+}
+
 /* ==================== NARRATIVE SCREEN ==================== */
 
 .text-display {
